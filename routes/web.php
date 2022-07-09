@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('frontend.homepage.index');
 });
+
+
+Route::get('/portfolio', function () {
+    return view('frontend.homepage.index');
+});
+

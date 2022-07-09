@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById('typewriter');
-const phrases = ['web designer.', 'football enthusiast.', 'programmer.'];
+const phrases = ['web designerem.', 'entuzjastą piłki nożnej.', 'programistą.'];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
