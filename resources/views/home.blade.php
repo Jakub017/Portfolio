@@ -45,13 +45,13 @@
   <script src="https://kit.fontawesome.com/77b0ecbb1c.js" crossorigin="anonymous"></script>
 
   <!-- Styles -->
-  <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen">
 </head>
 
 <body>
   <nav>
     <div class="logo">
-      <a href="https://jakub-lipinski.com/"><img src="assets/img/logo.webp" alt=""></a>
+      <a href="https://jakub-lipinski.com/"><img src="{{ asset('img/logo.webp') }}" alt=""></a>
     </div>
     <div class="hamburger-menu">
       <span></span>
@@ -98,7 +98,7 @@
         <div class="me-container">
           <div class="photo-wrapper">
             <div class="photo-container">
-              <img src="assets/img/portrait.webp" alt="Jakub Lipiński">
+              <img src="{{ asset('img/portrait.webp') }}" alt="Jakub Lipiński">
             </div>
             <div class="square-1"></div>
             <div class="square-2"></div>
@@ -121,7 +121,7 @@
     <h3 class="section-sub-title">Here's what i can do for you</h3>
     <div class="services-wrapper">
       <div class="service">
-        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+        <div class="service-icon"><i class="fa-regular fa-mobile-notch"></i></div>
         <h4 class="service-title">Web design</h4>
         <p class="service-description">I create websites in line with current trends, which are adapted to large
           computer screens and smartphones.
@@ -166,7 +166,7 @@
         <ul class="skills-list">
           <li>Wordpress <i class="fa-brands fa-wordpress"></i></li>
           <li>Git <i class="fa-brands fa-git-alt"></i></li>
-          <li>Adobe XD <img src="assets/img/adobe_xd.png" width="24px" alt=""></li>
+          <li>Adobe XD <img src="{{ asset('img/adobe_xd.png') }}" width="24px" alt=""></li>
         </ul>
       </div>
     </div>
@@ -178,7 +178,7 @@
       <div class="project-card">
         <h3 class="project-name">Weather App</h3>
         <div class="project-photo">
-          <img src="assets/img/weather_app.webp" alt="">
+          <img src="{{ asset('img/weather_app.webp') }}" alt="">
         </div>
         <p class="project-description">My first API application, data is taken from Open weather Map. The application
           displays the temperature and some additional details about the weather in the selected city. Built with
@@ -188,7 +188,7 @@
       <div class="project-card">
         <h3 class="project-name">Louve</h3>
         <div class="project-photo">
-          <img src="assets/img/louve.webp" alt="">
+          <img src="{{ asset('img/louve.webp') }}" alt="">
         </div>
         <p class="project-description">
           My dad's home brewery site. Its aim was to present the history of the brewery and the brewed beers in the
@@ -198,7 +198,7 @@
       <div class="project-card">
         <h3 class="project-name">Project Name</h3>
         <div class="project-photo">
-          <img src="assets/img/expense.webp" alt="">
+          <img src="{{ asset('img/expense.webp') }}" alt="">
         </div>
         <p class="project-description">An application that allows you to track your expenses, one of the first
           applications created using React.js
@@ -238,9 +238,9 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src=" {{asset('js/particles.js')}} "></script>
+  <script src="{{asset('js/app.js')}}"></script>
+  <script src="{{asset('js/custom.js')}}"></script>
 
 
 </body>
