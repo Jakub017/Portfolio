@@ -28,8 +28,7 @@
       <div class="service">
         <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
         <h3 class="service-title">Projektowanie www</h3>
-        <p class="service-description">I create websites in line with current trends, which are adapted to large
-          computer screens and smartphones.
+        <p class="service-description">Zaprojektuję layout strony internetowej w programie Figma lub Adobe XD. Otrzymasz widoki twojej strony zarówno na ekrany monitorów oraz smartfonów.
         </p>
       </div>
       
