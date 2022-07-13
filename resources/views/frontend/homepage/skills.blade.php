@@ -1,4 +1,4 @@
-<section id="skills">
+<!-- <section id="skills">
     <h1 class="section-title">Umiejętności</h1>
     <h3 class="section-sub-title">Technologie oraz narzędzia, które opanowałem</h3>
     <div class="skills-wrapper">
@@ -39,4 +39,4 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> -->

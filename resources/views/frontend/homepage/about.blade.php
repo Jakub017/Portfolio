@@ -5,18 +5,7 @@
       <div class="about-description">
         <h2>Jestem <span id="typewriter"></span></h2>
         <p>Nazwyam się <span class="colored">Jakub Lipiński</span>, jestem 21 letnim web designerem. Obecnie mieszkam w Polsce i pracuję w agencji
-         <span class="colored">StronyDlaFirm.eu</span>. W wieku 18 lat zacząłem naukę HTML'a , CSS'a oraz Javascritp. W 2019 roku stworzyłem pierwszą, bardzo prostą stronę internetową. Od tamtrego momentu stale uczę się nowych technologii, staram siebyć na bieżąco z obecnymi trendami i pogłębiam wiedzę w poznanych już.
-        </p>
-         <p>My name is <span class="colored">Jakub Lipiński</span>, I am a
-          21-year-old web developer, based in Poland and currently working at <span
-            class="colored">StronyDlaFirm.eu</span>. At the
-          age of 18, I started learning
-          HTML, CSS and JavaScript. In
-          2019 I created my first website
-          and since then I've been trying to
-          learn new frameworks and
-          improve my skills in already
-          known technologies.
+         <span class="colored">StronyDlaFirm.eu</span>. W wieku 18 lat zacząłem naukę HTML'a , CSS'a oraz Javascript. W 2019 roku stworzyłem pierwszą, bardzo prostą stronę internetową. Od tamtrego momentu stale uczę się nowych technologii, staram siebyć na bieżąco z obecnymi trendami i pogłębiam wiedzę w poznanych już.
         </p>
       </div>
       <div class="me">

@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
 
   <!-- Meta Tags -->
-  <title>Jakub Lipiński - UI and UX Web Designer</title>
+  <title>Jakub Lipiński - Web Design</title>
   <meta charset="utf-8">
   <meta name="description" content="I will make sure that your website is the best possible showcase of your company">
   <meta name="keywords"
@@ -52,9 +52,8 @@
   @include('frontend.nav');
   @include('frontend.homepage.welcome');
   @include('frontend.homepage.about');
-   @include('frontend.homepage.skills');
+  @include('frontend.homepage.skills');
   @include('frontend.homepage.services');
-
   @include('frontend.homepage.works');
   @include('frontend.homepage.contact');
   @include('frontend.footer')

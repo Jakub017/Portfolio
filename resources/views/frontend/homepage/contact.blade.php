@@ -1,16 +1,15 @@
 <section id="contact">
-    <h1 class="section-title">contact</h1>
-    <h3 class="section-sub-title">Get in touch</h3>
-    <p>If you are looking for a web designer contact me on <span class="colored">linkedin</span> or <span
-        class="colored">email directly.</span></p>
-    <div class="contact-tiles">
-      <div class="tile">
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:j.lipinski017@gmail.com">j.lipinski017@gmail.com</a>
+    <h1 class="section-title">Kontakt</h1>
+    <h3 class="section-sub-title">Napisz do mnie</h3>
+    <p>Pamiętaj, że <span class="colored">wycena jest darmowa</span>, więc skontaktuj się ze mną za pomocą tego formularza kontaktowego. 
+    <form action="">
+      <div class="half-inputs">
+        <input class="name" name="name" type="text" placeholder="Imię">
+        <input class="email" name="email" type="email" placeholder="Email (wymagane)" required>
       </div>
-      <div class="tile">
-        <i class="fa-brands fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/jakub-lipinski/">linkedin.com/in/jakub-lipinski/</a>
-      </div>
-    </div>
+      <input class="input" type="text" placeholder="Temat"> 
+      <textarea class="message" name="message" id="" cols="30" rows="10" placeholder="Treść wiadomości (wymagane)" required></textarea>
+
+        <input class="resume send_btn" type="submit" value="Wyślij wiadomość">
+    </form>
   </section>

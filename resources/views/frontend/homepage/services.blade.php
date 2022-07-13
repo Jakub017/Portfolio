@@ -3,9 +3,9 @@
     <h3 class="section-sub-title">Oto co mogę dla ciebie zrobić</h3>
     <div class="services-wrapper">
       <div class="service">
-        <div class="service-icon"><i class="fa-solid fa-laptop"></i></div>
+        <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
         <h3 class="service-title">Strony internetowe</h3>
-        <p class="service-description">Wykonuję duże strony internetowe w oparciu o autorski system CMS oraz proste projekty. Zdaję sobie sprawę, że każdy projekt jest inny, dlatego podchodzę do niego indywidualnie dobierając najlepsze rozwiązania.
+        <p class="service-description">Wykonuję duże strony internetowe oraz proste projekty. Zdaję sobie sprawę, że każdy projekt jest inny, dlatego podchodzę do niego indywidualnie dobierając najlepsze rozwiązania.
         </p>
       </div>
       <div class="service">
@@ -26,8 +26,13 @@
         <p class="service-description">Wykonuję drobne oraz kompletne modernizacje stron internetowych. Jeśli twoja strona została wykonana kilka lat temu i nie jest już atrakcyjna - nie zwlekaj. Pamiętaj, że wizerunek internetowy to podstawa sukcesu.</p>
       </div>
       <div class="service">
+        <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3 class="service-title">Responsywne strony internetowe</h3>
+        <p class="service-description">Wszystkie wykonywane przeze mnie strony są responsywne, to znaczy że dostosowują się do wyświetlaczy urządze mobilnych takich jak smartfony i tablety.</p>
+</div>
+      <div class="service">
         <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
-        <h3 class="service-title">Projektowanie www</h3>
+        <h3 class="service-title">Projektowanie stron internetowych</h3>
         <p class="service-description">Zaprojektuję layout strony internetowej w programie Figma lub Adobe XD. Otrzymasz widoki twojej strony zarówno na ekrany monitorów oraz smartfonów.
         </p>
       </div>
