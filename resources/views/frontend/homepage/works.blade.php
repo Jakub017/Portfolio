@@ -4,18 +4,20 @@
     <div class="projects">
       <div class="project-card">
         <div class="project-photo">
-          <img src="{{ asset('img/weather_app.webp') }}" alt="">
+          <!-- <img src="{{ asset('img/justtag.png') }}" alt=""> -->
         </div>
         <div class="project-content">
-          <h3 class="project-name">Justtag group</h3>
+          <h3 class="project-name">Browar Louve</h3>
           <ul class="used_tech">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>Laravel</li>
+            <li>BEM</li>
           </ul>
           <p class="project-description">Strona internetowa grupy JustTag zajmującej się szeroko pojętym marketingiem. Strona jest responsywna, składa się z 6 podstrony oraz posiada dwa języki (Polski i Angielski).</p>
             <div class="project-buttons">
-              <a target="_blank" href="https://github.com/Jakub017/Weather-app" class="project-link"><i class="fa-brands fa-github"></i> Zobacz na Githubie</a>
+              <a target="_blank" href="https://github.com/Jakub017/Weather-app" class="project-link">Zobacz na Githubie</a>
               <a href="_blank" href="#" class="project-link visit">Zobacz online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           

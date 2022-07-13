@@ -23,17 +23,17 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
 
   <!-- Meta Tags -->
-  <title>Jakub Lipiński - Web Design</title>
+  <title>Jakub Lipiński - Web Developer</title>
   <meta charset="utf-8">
-  <meta name="description" content="I will make sure that your website is the best possible showcase of your company">
+  <meta name="description" content="Profesjonalne, responsywne strony internetowe.">
   <meta name="keywords"
-    content="Web Developer, design, web designer, html, css, javascript, wordpress developer, user experience">
+    content="strony internetowe, responsywne strony, reklama, strony dla firm">
   <meta name="author" content="Jakub Lipiński" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:description"
-    content="I will make sure that your website is the best possible showcase of your company" />
+    content="Profesjonalne, responsywne strony internetowe." />
   <meta property='og:image' content='assets/img/og-image.png' />
 
   <!-- Google Fonts -->
