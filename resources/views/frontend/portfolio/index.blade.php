@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
 
   <!-- Meta Tags -->
-  <title>Jakub Lipiński - Web Developer</title>
+  <title>Jakub Lipiński - Realizacje</title>
   <meta charset="utf-8">
   <meta name="description" content="Profesjonalne, responsywne strony internetowe.">
   <meta name="keywords"
@@ -50,12 +50,8 @@
 
 <body>
   @include('frontend.nav');
-  @include('frontend.homepage.welcome');
-  @include('frontend.homepage.about');
-  @include('frontend.homepage.skills');
-  @include('frontend.homepage.services');
-  @include('frontend.homepage.works');
-  @include('frontend.homepage.contact');
+
+  
   @include('frontend.footer')
 
 

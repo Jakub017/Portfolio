@@ -13,12 +13,13 @@
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Laravel</li>
+            <li>SCSS</li>
             <li>BEM</li>
           </ul>
-          <p class="project-description">Strona internetowa grupy JustTag zajmującej się szeroko pojętym marketingiem. Strona jest responsywna, składa się z 6 podstrony oraz posiada dwa języki (Polski i Angielski).</p>
+          <p class="project-description">Strona browaru domowego Louve. Strona posiada wiele podstron poświęconych warkom. Wyposażona została w panel administratora, w którym klient może zmieniać, dodawać i ususwać wszysrtkie treści znajdujące się na stronie.</p>
             <div class="project-buttons">
-              <a target="_blank" href="https://github.com/Jakub017/Weather-app" class="project-link">Zobacz na Githubie</a>
-              <a href="_blank" href="#" class="project-link visit">Zobacz online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a target="_blank" href="https://github.com/Jakub017/BrowarLouve" class="project-link">Zobacz na Githubie</a>
+              <a target="_blank" href="https://jakub017.github.io/BrowarLouve/" class="project-link visit">Zobacz online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           
         </div>
@@ -69,4 +70,5 @@
       </div>
      
     </div>
+    <a href="{{ url('/realizacje') }}" class="resume all">Zobacz wszystkie realizacje</a>
   </section>

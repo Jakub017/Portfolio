@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\HomePageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.homepage.index');
-});
 
-
-Route::get('/portfolio', function () {
-    return view('frontend.homepage.index');
-});
-
+Route::get('/', [HomePageController::class, 'Index']);
+Route::get('/realizacje',[PortfolioController::class, 'Index']);

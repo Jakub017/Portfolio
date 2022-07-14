@@ -482,9 +482,17 @@ h3.section-sub-title {
     max-width: 1300px;
 }
 
-.project-card:hover .project-photo::after {
-    opacity: 0.15;
+.project-photo:hover::after {
+    opacity: 0.05;
 }
+
+.project-content:hover .project-photo::after {
+    opacity: 0.05;
+}
+
+/* .project-card:hover .project-photo::after {
+    opacity: 0.15;
+} */
 
 .project-photo {
     width: 100%;
@@ -543,6 +551,7 @@ h3.section-sub-title {
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     color: gray;
     padding: 1rem;
     margin-left: 0;
@@ -594,6 +603,10 @@ h3.section-sub-title {
 .project-link:hover {
     background-color: var(--main-green);
     color: #fff;
+}
+
+.all {
+    margin-top: 4rem;
 }
 
 /* Works section ends */
