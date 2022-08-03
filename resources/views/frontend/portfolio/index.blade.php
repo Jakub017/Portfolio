@@ -15,17 +15,17 @@
     gtag('config', 'G-63GSYD639X');
   </script>
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+  <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}>
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('img/android-chrome-192x192.png') }}">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('img/android-chrome-512x512.png') }}">
 
   <!-- Meta Tags -->
   <title>Jakub Lipiński - Realizacje</title>
   <meta charset="utf-8">
-  <meta name="description" content="Profesjonalne, responsywne strony internetowe.">
+  <meta name="description" content="Tworzę profesjonalne, responsywne strony i sklepy internetowe.">
   <meta name="keywords"
     content="strony internetowe, responsywne strony, reklama, strony dla firm">
   <meta name="author" content="Jakub Lipiński" />
@@ -33,7 +33,7 @@
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:description"
-    content="Profesjonalne, responsywne strony internetowe." />
+    content="Tworzę profesjonalne, responsywne strony i sklepy internetowe." />
   <meta property='og:image' content='assets/img/og-image.png' />
 
   <!-- Google Fonts -->
@@ -51,7 +51,7 @@
 <body>
   @include('frontend.nav');
 
-  
+  <h1>LOL</h1>
   @include('frontend.footer')
 
 

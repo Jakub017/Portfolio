@@ -1,13 +1,17 @@
-<section id="services">
+<section class="services-container">
     <h1 class="section-title">Usługi</h1>
     <h3 class="section-sub-title">Oto co mogę dla ciebie zrobić</h3>
+
+
     <div class="services-wrapper">
+      
       <div class="service">
         <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
         <h3 class="service-title">Strony internetowe</h3>
         <p class="service-description">Wykonuję duże strony internetowe oraz proste projekty. Zdaję sobie sprawę, że każdy projekt jest inny, dlatego podchodzę do niego indywidualnie dobierając najlepsze rozwiązania.
         </p>
       </div>
+
       <div class="service">
         <div class="service-icon"><i class="fa-solid fa-basket-shopping"></i></div>
         <h3 class="service-title">Sklepy internetowe</h3>

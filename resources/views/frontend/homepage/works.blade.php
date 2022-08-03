@@ -27,21 +27,18 @@
 
       <div class="project-card">
         <div class="project-photo">
-          <img src="{{ asset('img/weather_app.webp') }}" alt="">
+          <!-- <img src="{{ asset('img/weather_app.webp') }}" alt=""> -->
         </div>
         <div class="project-content">
-          <h3 class="project-name">Weather App</h3>
+          <h3 class="project-name">Design Alive</h3>
           <ul class="used_tech">
-            <li>React</li>
-            <li>Css</li>
-            <li>API</li>
+            <li>Wordpress</li>
+            <li>PHP</li>
+            <li>Obsługa</li>
           </ul>
-          <p class="project-description">My first API application, data is taken from Open weather Map. The application
-            displays the temperature and some additional details about the weather in the selected city. Built with
-            create-react-app.</p>
+          <p class="project-description">DesignAlive to portal z artykułami ze świata szeroko pojętego designu. W tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz wprowadzaniem nowych rozwiązań do portalu.</p>
             <div class="project-buttons">
-              <a target="_blank" href="https://github.com/Jakub017/Weather-app" class="project-link">Zobacz na Githubie</a>
-              <a href="_blank" href="#" class="project-link visit">Zobacz online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a target="_blank" href="https://www.designalive.pl/" class="project-link visit">Zobacz online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           
         </div>
@@ -70,5 +67,5 @@
       </div>
      
     </div>
-    <a href="{{ url('/realizacje') }}" class="resume all">Zobacz wszystkie realizacje</a>
+    <a href="{{ url('/projekty') }}" class="resume all">Zobacz wszystkie realizacje</a>
   </section>

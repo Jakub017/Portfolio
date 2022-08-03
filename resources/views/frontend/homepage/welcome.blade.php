@@ -7,6 +7,6 @@
     </p>
     <div class="welcome-buttons">
       <a href="#services" class="see-works">Moje usługi</a>
-      <!-- <a href="#services" class="see-works">Kontakt</a> -->
+      <a href="#contact" class="see-works">Kontakt</a>
     </div>
   </div>

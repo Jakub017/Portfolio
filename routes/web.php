@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PortfolioController;
-use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +15,5 @@ use App\Http\Controllers\HomePageController;
 */
 
 
-Route::get('/', [HomePageController::class, 'Index']);
-Route::get('/realizacje',[PortfolioController::class, 'Index']);
+Route::get('/', [PagesController::class, 'getHomePage']);
+Route::get('/projekty', [PagesController::class, 'getPortfolioPage']);

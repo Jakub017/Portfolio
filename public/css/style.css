@@ -179,6 +179,11 @@ nav {
     transform: scale(1.05);
 }
 
+.see-works:nth-child(2):hover {
+    transform: scale(1);
+    background-color: rgba(0, 167, 137, 0.2);
+}
+
 section {
     max-width: 1300px;
     margin-left: auto;
@@ -523,6 +528,14 @@ h3.section-sub-title {
 
 .project-card:first-child .project-photo {
     background-image: url("../img/louve.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.project-card:nth-child(2) .project-photo {
+    background-image: url("../img/design_alive.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
