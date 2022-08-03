@@ -1,4 +1,4 @@
-<section class="services-container">
+<section id="services">
     <h1 class="section-title">Usługi</h1>
     <h3 class="section-sub-title">Oto co mogę dla ciebie zrobić</h3>
 

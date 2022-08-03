@@ -4,7 +4,7 @@
     <div class="projects">
       <div class="project-card">
         <div class="project-photo">
-          <!-- <img src="{{ asset('img/justtag.png') }}" alt=""> -->
+          <img src="{{ asset('img/justtag.png') }}" alt="">
         </div>
         <div class="project-content">
           <h3 class="project-name">Browar Louve</h3>
@@ -27,7 +27,7 @@
 
       <div class="project-card">
         <div class="project-photo">
-          <!-- <img src="{{ asset('img/weather_app.webp') }}" alt=""> -->
+          <img src="{{ asset('img/design_alive.png') }}" alt="">
         </div>
         <div class="project-content">
           <h3 class="project-name">Design Alive</h3>

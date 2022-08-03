@@ -526,7 +526,7 @@ h3.section-sub-title {
     height: 100%;
 }
 
-.project-card:first-child .project-photo {
+/* .project-card:first-child .project-photo {
     background-image: url("../img/louve.png");
     background-size: cover;
     background-position: center;
@@ -539,7 +539,7 @@ h3.section-sub-title {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 .project-content {
     background-color: var(--dark-blue);
