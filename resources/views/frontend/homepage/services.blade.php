@@ -4,7 +4,7 @@
 
 
     <div class="services-wrapper">
-      
+
       <div class="service">
         <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
         <h3 class="service-title">Strony internetowe</h3>
@@ -15,7 +15,7 @@
       <div class="service">
         <div class="service-icon"><i class="fa-solid fa-basket-shopping"></i></div>
         <h3 class="service-title">Sklepy internetowe</h3>
-        <p class="service-description">Oferuję profesjonalne sklepy internetowe dostosowane do potrzeb klienta w oparciu o system PrestaShop lub WooCommerce. Postaw na nowoczesność swojego biznesu.
+        <p class="service-description">Oferuję profesjonalne sklepy internetowe dostosowane do potrzeb klienta w oparciu o system PrestaShop lub WooCommerce. Postaw na nowoczesność swojego biznesu i zwiększ sprzedaż.
         </p>
       </div>
       <div class="service">
@@ -40,7 +40,7 @@
         <p class="service-description">Zaprojektuję layout strony internetowej w programie Figma lub Adobe XD. Otrzymasz widoki twojej strony zarówno na ekrany monitorów oraz smartfonów.
         </p>
       </div>
-      
-      
+
+
     </div>
   </section>

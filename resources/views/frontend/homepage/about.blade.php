@@ -4,8 +4,9 @@
     <div class="about-me">
       <div class="about-description">
         <h2>Jestem <span id="typewriter"></span></h2>
-        <p>Nazwyam się <span class="colored">Jakub Lipiński</span>, jestem 21 letnim web designerem. Obecnie mieszkam w Polsce i pracuję w agencji
-         <span class="colored">StronyDlaFirm.eu</span>. W wieku 18 lat zacząłem naukę HTML'a , CSS'a oraz Javascript. W 2019 roku stworzyłem pierwszą, bardzo prostą stronę internetową. Od tamtrego momentu stale uczę się nowych technologii, staram siebyć na bieżąco z obecnymi trendami i pogłębiam wiedzę w poznanych już.
+        <p>Nazwyam się <span class="colored">Jakub Lipiński</span>, jestem 21 letnim Front-End Developerem. Obecnie mieszkam w Polsce i pracuję w agencji <span class="colored">StronyDlaFirm.eu</span>. Pracuję z witrynami i aplikacjami internetowymi opartymi o HTML, CSS, Javascript oraz jego różne frameworki - głównie React.js.<p> Zajmuję się również backendem - <span class="colored">tworzę własne panele administracyjne do zarządzania treścią</span> do autorskich stron internetowych w oparciu o jeden z frameworków php - Laravel. Potrafię również pracować z Wordpressem oraz Prestashop od strony klasycznej (tworzenie sklepów i stron) oraz deweloperskiej, tzn. różnego rodzaju modyfikacje szablonów, wtyczek, czy panelów administracyjnych.</p>
+
+
         </p>
       </div>
       <div class="me">
@@ -22,7 +23,7 @@
                 class="fa-brands fa-linkedin"></i></a>
             <a target="_blank" href="https://github.com/Jakub017"><i class="fa-brands fa-github-square"></i></a>
           </div>
-          <a class="resume" href="assets/Jakub_Lipiński_CV.pdf" download>
+          <a class="resume" href="{{asset('pdf/Jakub_Lipinski_cv.pdf')}}" download>
             Curriculum vitae
           </a>
         </div>

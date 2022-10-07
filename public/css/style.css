@@ -527,7 +527,7 @@ h3.section-sub-title {
 }
 
 .project-card:first-child .project-photo {
-    background-image: url("../img/webdev.png");
+    background-image: url("../img/justtag.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -535,14 +535,14 @@ h3.section-sub-title {
 
 
 .project-card:nth-child(2) .project-photo {
-    background-image: url("../img/design_alive.png");
+    background-image: url("../img/design_alive.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .project-card:nth-child(3) .project-photo {
-    background-image: url("../img/justtag.png");
+  background-image: url("../img/idea_domu.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

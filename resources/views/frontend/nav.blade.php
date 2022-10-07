@@ -1,6 +1,6 @@
 <nav>
     <div class="logo">
-      <a href="https://jakub-lipinski.com/"><img src="{{ asset('img/logo.webp') }}" alt=""></a>
+      <a href="/"><img src="{{ asset('img/logo.webp') }}" alt="Jakub Lipiński logo"></a>
     </div>
     <div class="hamburger-menu">
       <span></span>
