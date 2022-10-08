@@ -6,5 +6,5 @@ Portfolio page where I post my latest projects.
 
 ## Website address
 
-The website is available at: https://jakub-lipinski.com/
+The website is available at: https://lipinskijakub.pl/
 
