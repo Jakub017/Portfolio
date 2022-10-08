@@ -75,7 +75,34 @@ projectButtons.forEach((projectButton) => {
 
 // Services fadeIn start
 
+let scrollValue = 0;
+let viewportHeight = document.documentElement.clientHeight;
+const servicesHeight = [6];
+const servicesFromTop = [6];
+const serviceItems = [...document.querySelectorAll('.services-wrapper .service')];
 
+serviceItems.forEach((serviceItem, i) => {
+    servicesHeight[i] = serviceItem.offsetHeight;
+})
 
+serviceItems.forEach((serviceItem, i) => {
+    servicesFromTop[i] = serviceItem.offsetTop;
+})
+
+document.addEventListener('scroll', function () {
+    scrollValue = document.body.scrollTop || document.documentElement.scrollTop;
+
+    serviceItems.forEach((serviceItem, i) => {
+        if (scrollValue >= servicesFromTop[i] - viewportHeight + servicesHeight[i]) {
+            serviceItem.classList.add("active");
+        }
+    })
+
+})
 
 // Services fadeIn end
+
+// Scroll to sections start
+
+
+// Scroll to section end
