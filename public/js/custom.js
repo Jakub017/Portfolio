@@ -1,7 +1,7 @@
+// Portfolio filter start
+
 const projectButtons = [...document.querySelectorAll('.isotope button')];
 const projects = [...document.querySelectorAll('.projects .project-card')];
-
-
 
 projectButtons.forEach((projectButton) => {
     projectButton.addEventListener("click", function () {
@@ -13,7 +13,15 @@ projectButtons.forEach((projectButton) => {
 })
 
 
+function hide(element) {
+    element.classList.remove('filter-visible')
+    element.classList.remove('filter-hide');
+}
 
+function show(element) {
+    element.classList.add('filter-visible');
+    element.classList.add('filter-faded-in');
+}
 
 
 projectButtons.forEach((projectButton) => {
@@ -24,18 +32,10 @@ projectButtons.forEach((projectButton) => {
                     project.classList.add('filter-hide');
                     project.classList.remove('filter-faded-in');
 
-                    function hide() {
-                        project.classList.remove('filter-visible')
-                        project.classList.remove('filter-hide');
-                    }
-                    setTimeout(hide, 500);
+                    setTimeout(hide, 500, project);
 
                 } else {
-                    function show() {
-                        project.classList.add('filter-visible');
-                        project.classList.add('filter-faded-in');
-                    }
-                    setTimeout(show, 501);
+                    setTimeout(show, 501, project);
                 }
             })
 
@@ -45,19 +45,10 @@ projectButtons.forEach((projectButton) => {
                     project.classList.add('filter-hide');
                     project.classList.remove('filter-faded-in');
 
-                    function hide() {
-                        project.classList.remove('filter-visible')
-                        project.classList.remove('filter-hide');
-                    }
-                    setTimeout(hide, 500);
+                    setTimeout(hide, 500, project);
 
                 } else {
-                    function show() {
-
-                        project.classList.add('filter-visible');
-                        project.classList.add('filter-faded-in');
-                    }
-                    setTimeout(show, 501);
+                    setTimeout(show, 501, project);
 
                 }
             })
@@ -67,22 +58,24 @@ projectButtons.forEach((projectButton) => {
                     project.classList.add('filter-hide');
                     project.classList.remove('filter-faded-in');
 
-                    function hide() {
-                        project.classList.remove('filter-visible')
-                        project.classList.remove('filter-hide');
-                    }
-                    setTimeout(hide, 500);
+                    setTimeout(hide, 500, project);
 
                 } else {
-                    function show() {
-
-                        project.classList.add('filter-visible');
-                        project.classList.add('filter-faded-in');
-                    }
-                    setTimeout(show, 501);
+                    setTimeout(show, 501, project);
 
                 }
             })
         }
     })
 })
+
+// Portfolio filter end
+
+
+
+// Services fadeIn start
+
+
+
+
+// Services fadeIn end
