@@ -101,8 +101,3 @@ document.addEventListener('scroll', function () {
 })
 
 // Services fadeIn end
-
-// Scroll to sections start
-
-
-// Scroll to section end
