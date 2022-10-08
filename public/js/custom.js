@@ -1,47 +1,88 @@
-const textDisplay = document.getElementById('typewriter');
-const phrases = ['web designerem.', 'entuzjastą piłki nożnej.', 'programistą.'];
-let i = 0;
-let j = 0;
-let currentPhrase = [];
-let isDeleting = false;
-let isEnd = false;
+const projectButtons = [...document.querySelectorAll('.isotope button')];
+const projects = [...document.querySelectorAll('.projects .project-card')];
 
-function lettersLoop() {
-    isEnd = false;
-    textDisplay.innerHTML = currentPhrase.join('');
 
-    if (i < phrases.length) {
 
-        if (!isDeleting && j <= phrases[i].length) {
-            currentPhrase.push(phrases[i][j]);
-            j++;
-            textDisplay.innerHTML = currentPhrase.join('');
+projectButtons.forEach((projectButton) => {
+    projectButton.addEventListener("click", function () {
+        for (let i = 0; i < projectButtons.length; i++) {
+            projectButtons[i].classList.remove('active');
         }
+        projectButton.classList.add('active');
+    })
+})
 
-        if (isDeleting && j <= phrases[i].length) {
-            currentPhrase.pop(phrases[i][j]);
-            j--;
-            textDisplay.innerHTML = currentPhrase.join('');
+
+
+
+
+projectButtons.forEach((projectButton) => {
+    projectButton.addEventListener("click", function () {
+        if (projectButton.getAttribute("data-filter") === "html") {
+            projects.forEach((project) => {
+                if (project.getAttribute('data-filter') !== "html") {
+                    project.classList.add('filter-hide');
+                    project.classList.remove('filter-faded-in');
+
+                    function hide() {
+                        project.classList.remove('filter-visible')
+                        project.classList.remove('filter-hide');
+                    }
+                    setTimeout(hide, 500);
+
+                } else {
+                    function show() {
+                        project.classList.add('filter-visible');
+                        project.classList.add('filter-faded-in');
+                    }
+                    setTimeout(show, 501);
+                }
+            })
+
+        } else if (projectButton.getAttribute("data-filter") === "wordpress") {
+            projects.forEach((project) => {
+                if (project.getAttribute('data-filter') !== "wordpress") {
+                    project.classList.add('filter-hide');
+                    project.classList.remove('filter-faded-in');
+
+                    function hide() {
+                        project.classList.remove('filter-visible')
+                        project.classList.remove('filter-hide');
+                    }
+                    setTimeout(hide, 500);
+
+                } else {
+                    function show() {
+
+                        project.classList.add('filter-visible');
+                        project.classList.add('filter-faded-in');
+                    }
+                    setTimeout(show, 501);
+
+                }
+            })
+        } else if (projectButton.getAttribute("data-filter") === "prestashop") {
+            projects.forEach((project) => {
+                if (project.getAttribute('data-filter') !== "prestashop") {
+                    project.classList.add('filter-hide');
+                    project.classList.remove('filter-faded-in');
+
+                    function hide() {
+                        project.classList.remove('filter-visible')
+                        project.classList.remove('filter-hide');
+                    }
+                    setTimeout(hide, 500);
+
+                } else {
+                    function show() {
+
+                        project.classList.add('filter-visible');
+                        project.classList.add('filter-faded-in');
+                    }
+                    setTimeout(show, 501);
+
+                }
+            })
         }
-
-        if (j == phrases[i].length) {
-            isDeleting = true;
-        }
-
-        if (isDeleting && j === 0) {
-            currentPhrase = [];
-            isDeleting = false;
-            i++;
-            if (i == phrases.length) {
-                i = 0;
-            }
-        }
-
-    }
-    const speedUp = Math.random() * (80 - 50) + 50;
-    const normalSpeed = Math.random() * (300 - 200) + 200;
-    const time = isEnd ? 2000 : isDeleting ? speedUp : normalSpeed;
-    setTimeout(lettersLoop, time);
-}
-
-lettersLoop()
+    })
+})

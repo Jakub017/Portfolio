@@ -478,11 +478,12 @@ h3.section-sub-title {
     align-items: center;
     gap: 3rem;
     position: relative;
+    min-height: 1030px;
 }
 
 .project-card {
     width: 90%;
-    display: flex;
+    display: none;
     flex-direction: column;
     max-width: 1300px;
 }
@@ -526,27 +527,29 @@ h3.section-sub-title {
     height: 100%;
 }
 
-.project-card:first-child .project-photo {
+.project-card .project-photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.project-card[data-image='justtag'] .project-photo {
     background-image: url("../img/justtag.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-
-.project-card:nth-child(2) .project-photo {
+.project-card[data-image='design'] .project-photo {
     background-image: url("../img/design_alive.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.project-card:nth-child(3) .project-photo {
-  background-image: url("../img/idea_domu.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.project-card[data-image='invest'] .project-photo {
+    background-image: url("../img/invest_tracker.webp");
 }
+
+.project-card[data-image='idea'] .project-photo {
+    background-image: url("../img/idea_domu.webp");
+}
+
 
 
 .project-content {
@@ -628,6 +631,71 @@ h3.section-sub-title {
 
 .all {
     margin-top: 4rem;
+}
+
+.isotope {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.isotope button {
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem 2rem;
+    width: 155px;
+    color: var(--main-green);
+    border: 2px solid var(--main-green);
+    background-color: transparent;
+    border-radius: 0.7rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.isotope button.active,
+.isotope button.active:hover {
+    background-color: var(--main-green);
+    color: #fff;
+}
+
+.isotope button:hover {
+    background-color: rgba(0, 167, 137, 0.2);
+}
+
+.filter-visible {
+    display: flex;
+}
+
+.filter-hide div:nth-child(1) {
+    animation-name: fade-out-left;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.filter-hide div:nth-child(2) {
+    animation-name: fade-out-right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.filter-faded-in div:nth-child(1) {
+    animation-name: fade-in-left;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.filter-faded-in div:nth-child(2) {
+    animation-name: fade-in-right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
 }
 
 /* Works section ends */
@@ -794,6 +862,13 @@ label input {
         font-size: 4.5rem;
     }
 
+    .changed-order .project-content {
+        order: -1;
+        margin-left: 0;
+        margin-right: -120px;
+    }
+
+
     .half-inputs,
     .form-bottom {
         flex-direction: row;
@@ -831,15 +906,6 @@ label input {
 
     .project-card {
         flex-direction: row;
-    }
-
-    .project-card:nth-child(2) {
-        flex-direction: row-reverse;
-    }
-
-    .project-card:nth-child(2) .project-content {
-        margin-left: 0;
-        margin-right: -120px;
     }
 
     .project-content {
@@ -1050,5 +1116,54 @@ label input {
 
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes fade-out-left {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+}
+
+@keyframes fade-out-right {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+}
+
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
