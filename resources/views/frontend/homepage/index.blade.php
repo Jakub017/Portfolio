@@ -34,11 +34,11 @@
     <script src="https://kit.fontawesome.com/77b0ecbb1c.js" crossorigin="anonymous"></script>
 
     <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen">
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/app.css') }}" media="screen">
 </head>
 
 <body>
-    @include('frontend.nav');
+    @include('frontend.nav')
     @include('frontend.homepage.welcome')
     @include('frontend.homepage.about')
     @include('frontend.homepage.services')

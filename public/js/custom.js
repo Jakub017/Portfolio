@@ -101,3 +101,26 @@ document.addEventListener('scroll', function () {
 })
 
 // Services fadeIn end
+
+// Mobile menu start
+
+const hamburgerBtn = document.querySelector('.hamburger-menu');
+const menuContainer = document.querySelector('.menu-list');
+const closeMenuBtn = document.querySelector('.close-menu');
+const menuOptions = [...document.querySelectorAll('.menu-option')];
+
+hamburgerBtn.addEventListener("click", function () {
+    menuContainer.classList.add('active');
+})
+
+closeMenuBtn.addEventListener("click", function () {
+    menuContainer.classList.remove('active');
+})
+
+menuOptions.forEach((menuOption) => {
+    menuOption.addEventListener("click", function () {
+        menuContainer.classList.remove('active');
+    })
+})
+
+// Mobile menu end
