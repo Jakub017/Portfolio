@@ -38,13 +38,13 @@
 </head>
 
 <body>
-    @include('frontend.nav')
-    @include('frontend.homepage.welcome')
-    @include('frontend.homepage.about')
-    @include('frontend.homepage.services')
-    @include('frontend.homepage.works')
-    @include('frontend.homepage.contact')
-    @include('frontend.footer')
+    @include('elements.nav')
+    @include('homepage.welcome')
+    @include('homepage.about')
+    @include('homepage.services')
+    @include('homepage.works')
+    @include('homepage.contact')
+    @include('elements.footer')
 
 
     <!-- Scripts -->

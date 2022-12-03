@@ -15,5 +15,8 @@ use App\Http\Controllers\PagesController;
 */
 
 
-Route::get('/', [PagesController::class, 'getHomePage']);
-Route::get('/projekty', [PagesController::class, 'getPortfolioPage']);
+Route::controller(PagesController::class)->group(function (){
+    Route::get('/', 'getHomePage');
+    Route::get('/projekty', 'getPortfolioPage');
+});
+
