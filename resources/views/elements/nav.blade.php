@@ -14,5 +14,6 @@
         <a class="menu-option" href="#services">Usługi</a>
         <a class="menu-option" href="#works">Portfolio</a>
         <a class="menu-option" href="#contact">Kontakt</a>
+        <a class="menu-option quick-valuation">Szybka wycena</a>
     </div>
 </nav>

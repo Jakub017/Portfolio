@@ -39,6 +39,7 @@
 
 <body>
     @include('elements.nav')
+    @include('elements.valuation')
     @include('homepage.welcome')
     @include('homepage.about')
     @include('homepage.services')

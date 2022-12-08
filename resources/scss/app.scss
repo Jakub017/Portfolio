@@ -137,10 +137,19 @@ nav {
             color: #fff;
             text-decoration: none;
             font-size: 1.7rem;
-        }
 
-        & .resume {
-            color: $mainGreen;
+            &.quick-valuation {
+                display: block;
+                border: 2px solid $mainGreen;
+                padding: 1rem;
+                border-radius: .7rem;
+                color: $mainGreen;
+
+                &:hover {
+                    background-color: rgba(0, 167, 137, 0.2);
+                    cursor: pointer;
+                }
+            }
         }
 
         & img {
@@ -165,6 +174,89 @@ nav {
     }
 }
 
+
+.valuation-box {
+    height: 100vh;
+    width: fit-content;
+    background-color: $mainBlue;
+    position: fixed;
+    top: 0;
+    right: calc(-100vw - 35px);
+    // border: 2px solid #fff;
+    z-index: 100001;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3.5rem;
+    max-width: 400px;
+    color: #fff;
+    box-shadow: 0 0 15px 5px rgba(2, 12, 27, 0.7);
+    transition: 0.5s ease-in-out;
+
+
+    &.active {
+        right: 0;
+    }
+
+    .close-valuation {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 2.4rem;
+        }
+    }
+
+    .valuation-text {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $mainGreen;
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    .valuation-form {
+        width: 100%;
+        padding: 3rem 0 0 0;
+        margin: 0;
+
+        .send_btn {
+            padding: 1rem 6rem;
+            font-size: 1.8rem;
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+}
+
+#dark-background {
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    opacity: 0;
+
+    &.active {
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+    }
+}
 
 .welcome {
     text-align: center;
@@ -983,6 +1075,10 @@ form {
 
                 &:nth-child(6) {
                     animation-delay: .8s;
+                }
+
+                &:nth-child(7) {
+                    animation-delay: 1s;
                 }
 
                 &:hover {

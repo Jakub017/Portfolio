@@ -124,3 +124,22 @@ menuOptions.forEach((menuOption) => {
 })
 
 // Mobile menu end
+
+// Valuation box starts
+
+const valuationBtn = document.querySelector('.quick-valuation');
+const valuationBox = document.querySelector('.valuation-box');
+const closeValuation = document.querySelector('.close-valuation');
+const darkBackground = document.querySelector('#dark-background');
+
+
+valuationBtn.addEventListener("click", function () {
+    valuationBox.classList.add("active");
+    darkBackground.classList.add("active");
+})
+
+closeValuation.addEventListener("click", function () {
+    valuationBox.classList.remove("active");
+    darkBackground.classList.remove("active");
+})
+// Valuation box ends
