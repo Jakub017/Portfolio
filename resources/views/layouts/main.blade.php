@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="{{asset('img/android-chrome-512x512.png')}}">
 
     <!-- Meta Tags -->
-    <title>Jakub Lipiński - Projektowanie stron internetowych</title>
+    <title>Jakub Lipiński - Fullstack Developer</title>
     <meta charset="utf-8">
     <meta name="description"
         content="Profesjonalne, responsywne strony i sklepy internetowe dla osób prywatnych i firm.">
@@ -35,25 +35,19 @@
 
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="{{ asset('css/app.css') }}" media="screen">
+
+    <!-- Scripts -->
+    <script defer src=" {{asset('js/particles.js')}} "></script>
+    <script defer src="{{asset('js/app.js')}}"></script>
+    <script defer src="{{asset('js/custom.js')}}"></script>
 </head>
 
 <body>
     @include('elements.nav')
-    @include('elements.valuation')
-    @include('homepage.welcome')
-    @include('homepage.about')
-    @include('homepage.services')
-    @include('homepage.works')
-    @include('homepage.contact')
+
+    @yield('content')
+
     @include('elements.footer')
-
-
-    <!-- Scripts -->
-    <script src=" {{asset('js/particles.js')}} "></script>
-    <script src="{{asset('js/app.js')}}"></script>
-    <script src="{{asset('js/custom.js')}}"></script>
-
-
 </body>
 
 </html>

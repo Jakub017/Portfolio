@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function getHomePage() {
-        return view('homepage.index');
+        return view('home');
     }
 
-    // public function getPortfolioPage() {
-    //     return view('frontend.portfolio.index');
-    // }
+    public function getPortfolioPage() {
+        return view('projects');
+    }
 }

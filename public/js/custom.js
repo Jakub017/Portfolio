@@ -26,9 +26,9 @@ function show(element) {
 
 projectButtons.forEach((projectButton) => {
     projectButton.addEventListener("click", function () {
-        if (projectButton.getAttribute("data-filter") === "html") {
+        if (projectButton.getAttribute("data-filter") === "front-end") {
             projects.forEach((project) => {
-                if (project.getAttribute('data-filter') !== "html") {
+                if (project.getAttribute('data-filter') !== "front-end") {
                     project.classList.add('filter-hide');
                     project.classList.remove('filter-faded-in');
 
@@ -39,9 +39,9 @@ projectButtons.forEach((projectButton) => {
                 }
             })
 
-        } else if (projectButton.getAttribute("data-filter") === "wordpress") {
+        } else if (projectButton.getAttribute("data-filter") === "back-end") {
             projects.forEach((project) => {
-                if (project.getAttribute('data-filter') !== "wordpress") {
+                if (project.getAttribute('data-filter') !== "back-end") {
                     project.classList.add('filter-hide');
                     project.classList.remove('filter-faded-in');
 
@@ -52,9 +52,22 @@ projectButtons.forEach((projectButton) => {
 
                 }
             })
-        } else if (projectButton.getAttribute("data-filter") === "prestashop") {
+        } else if (projectButton.getAttribute("data-filter") === "full-stack") {
             projects.forEach((project) => {
-                if (project.getAttribute('data-filter') !== "prestashop") {
+                if (project.getAttribute('data-filter') !== "full-stack") {
+                    project.classList.add('filter-hide');
+                    project.classList.remove('filter-faded-in');
+
+                    setTimeout(hide, 500, project);
+
+                } else {
+                    setTimeout(show, 501, project);
+
+                }
+            })
+        } else if (projectButton.getAttribute("data-filter") === "cms") {
+            projects.forEach((project) => {
+                if (project.getAttribute('data-filter') !== "cms") {
                     project.classList.add('filter-hide');
                     project.classList.remove('filter-faded-in');
 

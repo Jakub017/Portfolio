@@ -1,6 +1,6 @@
 <nav>
     <div class="logo">
-        <a href="/"><img src="{{ asset('img/logo.webp') }}" alt="Jakub Lipiński logo"></a>
+        <a href="{{route('get.home')}}"><img src="{{ asset('img/logo.webp') }}" alt="Jakub Lipiński logo"></a>
     </div>
     <div class="hamburger-menu">
         <span></span>
@@ -14,6 +14,6 @@
         <a class="menu-option" href="#services">Usługi</a>
         <a class="menu-option" href="#works">Portfolio</a>
         <a class="menu-option" href="#contact">Kontakt</a>
-        <a class="menu-option quick-valuation">Szybka wycena</a>
+        <!-- <a class="menu-option quick-valuation">Szybka wycena</a> -->
     </div>
 </nav>
