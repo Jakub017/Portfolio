@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,9 @@ use App\Http\Controllers\PagesController;
 Route::controller(PagesController::class)->group(function (){
     Route::get('/', 'getHomePage')->name('get.home');
     Route::get('/projekty', 'getPortfolioPage')->name('get.portfolioPage');
+});
+
+Route::controller(PagesController::class)->group(function (){
+    Route::post('/', [ContactController::class, 'store'])->name('contact.store');
 });
 

@@ -9,8 +9,8 @@
     <p class="welcome-description">Zajmuję się tworzeniem (oraz projektowaniem) stron i aplikacji internetowych w
         oparciu o HTML, CSS, Javascript oraz Laravel.</p>
     <div class="welcome-buttons">
-        <a href="#works" class="see-works">Portfolio</a>
-        <a href="#contact" class="see-works">Kontakt</a>
+        <a href="#works" class="see-works">{{__('texts.portfolio')}}</a>
+        <a href="#contact" class="see-works">{{__('texts.contact')}}</a>
     </div>
 </div>
 
@@ -32,7 +32,10 @@
             <p>Często przed rozpoczęciem pracy nad swoim projektem, tworzę jego wizualizację w programie <span
                     class="colored">Figma</span> lub <span class="colored">Adobe Xd</span>.</p>
             <p>Posiadam również doświadczenie w pracy z różnymi CMS, głównie <span class="colored">Wordpress</span> oraz
-                <span class="colored">Prestashop</span>.</p>
+                <span class="colored">Prestashop</span>, głównie z zakresu tworzenia nowych, utrzymywania i konserwacji
+                istniejsących stron opartych na tych właśnie CMS. Zdarza się również, że <span
+                    class="colored">modyfikuję motywy pod konkretne
+                    potrzeby klienta</span>.</p>
         </div>
         <div class="me">
             <div class="me-container">
@@ -171,6 +174,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Full-stack projects -->
         <div class="project-card filter-visible" data-filter="full-stack" data-image="crm-app">
             <div class="project-photo"></div>
@@ -186,7 +190,10 @@
                 </ul>
                 <p class="project-description">Aplikacja, w której użytkownik może planować swoje wydarzenia, zapisywać
                     dane logowania do stron internetowych, klientów FTP czy SSH. Aplikacja została również wyposażona w
-                    funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego.</p>
+                    funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego. Oprócz podstawowych
+                    funkcji CRUD, dodałem również <span class="colored">możliwość filtrowania danych według ich typu,
+                        czy daty dodania,
+                        oraz funkcję wyszukiwarki</span>.</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/crm-app" class="project-link">Repozytorium
                         Github</a>
@@ -223,6 +230,7 @@
                 </div>
             </div>
         </div>
+
         <!-- CMS projects -->
         <div class="project-card" data-filter="cms" data-image="design">
             <div class="project-photo"></div>
@@ -234,7 +242,8 @@
                     <li>Obsługa</li>
                     <li>Asana</li>
                 </ul>
-                <p class="project-description">DesignAlive to portal z artykułami ze świata szeroko pojętego designu. W
+                <p class="project-description">DesignAlive to portal z artykułami ze świata szeroko pojętego designu z
+                    około <span class="colored">30 tysiącami aktywnych użytkowników każdego miesiąca</span>. W
                     tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz
                     wprowadzaniem nowych rozwiązań do portalu.</p>
                 <div class="project-buttons">
@@ -287,7 +296,7 @@
 
 
     </div>
-    <a href="{{route('get.portfolioPage')}}" class="resume all">Zobacz wszystkie realizacje</a>
+    <!-- <a href="{{route('get.portfolioPage')}}" class="resume all">Zobacz wszystkie realizacje</a> -->
 </section>
 
 <section id="contact">
@@ -296,16 +305,30 @@
     <p>Moja skrzynka jest zawsze otwarta, więc niezależnie od tego, czy masz pytanie lub po prostu się przywitać -
         odpiszę tak szybko jak to możliwe!
         <p>
-            <form action="" method="POST">
+            @if($errors->any())
+            <ul>
+                @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+
+            @else(Session::has('success'))
+            <div class="alert alert-success">
+                {{Session::get('success')}}
+            </div>
+
+            @endif
+
+            <form action="{{route('contact.store')}}" method="POST">
+                @csrf
                 <div class="half-inputs">
-                    <input class="email" name="email" type="email" placeholder="Email (wymagane)" required>
-                    <input class="phone" name="phone" type="tel" placeholder="Numer telefonu" required>
+                    <input class="email" name="email" type="email" placeholder="Email (wymagane)"
+                        value="{{old('email')}}">
+                    <input class="phone" name="phone" type="tel" placeholder="Numer telefonu" value="{{old('phone')}}">
                 </div>
-                <input class="topic" type="text" placeholder="Temat">
-
+                <input name="subject" type="text" placeholder="Temat" value="{{old('topic')}}">
                 <textarea class="message" name="message" id="" cols="30" rows="10"
-                    placeholder="Treść wiadomości (wymagane)" required></textarea>
-
+                    placeholder="Treść wiadomości (wymagane)">{{old('message')}}</textarea>
                 <input class="resume send_btn" type="submit" value="Wyślij wiadomość">
             </form>
 </section>
