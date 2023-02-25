@@ -257,6 +257,7 @@ nav .hamburger-menu span {
     color: #fff;
     width: 90%;
     margin-top: 3rem;
+    width: fit-content;
 }
 
 .welcome h1 {
@@ -904,6 +905,11 @@ form .send_btn {
     font-size: 1.6rem;
 }
 
+.language-icon {
+    display: block;
+    width: 32px;
+}
+
 /* Media queries */
 @media (min-width: 768px) {
     .welcome h1 {
@@ -1064,7 +1070,8 @@ form .send_btn {
         display: none;
     }
 
-    nav .menu-list img {
+    .mobile-logo,
+    .close-menu {
         display: none;
     }
 

@@ -1,0 +1,63 @@
+{
+    "menu.about": "About me",
+    "menu.skills": "Skills",
+    "menu.portfolio": "Portfolio",
+    "menu.contact": "Contact",
+
+
+    "hero.description": "I develop and design websites and web applications based on HTML, CSS, Javascript and Laravel.",
+
+
+    "about.paragraph1": "My name is Jakub Lipinski, I am a 22-year-old Full-stack Developer. I currently live in Poland and work for the agency StronyDlaFirm.eu. I work with websites and web applications based on HTML, CSS, Javascript and one of the PHP frameworks - Laravel.",
+    "about.paragraph2": "In addition to the classic work of a Front-End developer, with which my adventure with web-development began, I also started to work on the back-end side. I create my own administrative panels and use ready-made solutions such as Voyager. I am currently working on my own online store system to get even more familiar with Laravel.",
+    "about.paragraph3": "I often create a visualization of my project in Figma or Adobe Xd before I start working on it.",
+    "about.paragraph4": "I also have experience working with various CMS, mainly Wordpress and Prestashop, mainly in the field of creating new, maintaining and preserving existing sites based on these CMS. I also happen to modify themes for specific client needs.",
+
+    "about.heading": "About me",
+    "about.subheading": "Let's get to know each other",
+
+    "skills.heading": "Skills",
+    "skills.subheading": "Technologies and tools I work with",
+
+    "portfolio.heading": "Portfolio",
+    "portfolio.subheading": "My major projects",
+
+    "contact.heading": "Contact",
+    "contact.subheading": "Get in touch",
+    "contact.text": "My mailbox is always open, so whether you have a question or just to say hello - I will write back as soon as possible!",
+
+    "github.repo": "Github repository",
+    "private.repo": "Private repository",
+    "see.online": "See online",
+
+    "justtag.title": "Just Tag",
+    "justtag.description": "A website for an agency that studies offline and online user behavior. In this project, I was concerned with creating only the layer that the user sees from the provided graphic design using HTML and pure CSS. I am providing the Github repository of this project only for recruitment purposes.",
+
+    "digitalowa.title": "Administration Panel of digitalowa.pl website",
+    "digitalowa.description": "Simple administration panel for digitalowa.pl website allowing to manage content: adding services, editing texts or changing contact details. The panel was created based on the Voyager package. Screenshots of the panel and an explanation of how it works are available in the readme file of the repository.",
+
+    "crm.title": "Private CRM",
+    "crm.description": "An application where users can schedule their events, save login credentials for websites, FTP or SSH clients. The application is also equipped with the function to add notes, edit the profile and change the color theme. In addition to the basic CRUD functions, I have also added the ability to filter data by type or date of addition, and a search engine function.",
+
+    "dog.title": "Doggo Cafe",
+    "dog.description": "The website of a fictional coffee shop. I used the BEM methodology during styling. The site is equipped with Voyager admin panel for content management (screenshots and operation are available in the repository readme file). The contact form is secured with Google Recaptcha V3.",
+
+    "design.title": "Design Alive",
+    "design.description": "DesignAlive is a portal with articles from the world of wide-ranging design with about 30 thousand active users every month. In this project, I was in charge of keeping the site up-to-date and secure, maintenance and introducing new solutions to the portal.",
+
+    "iuvo.title": "IUVO laser store",
+    "iuvo.description": "This is an online store based on Prestashop system. In this project, in addition to implementing the theme or adding products and categories, I modified the template and added Google Tag.",
+
+    "idea.title": "Idea Domu",
+    "idea.description": "Portal with articles containing projects and realizations of modern houses, as well as tips and curiosities about interior design. In my work with this site I am involved in implementing new solutions, modifying themes, plugins, as well as maintaining the security and speed of the site.",
+
+    "see.projects": "See all realizations",
+
+    "form.email": "Email (required)",
+    "form.phone": "Phone number",
+    "form.subject": "Subject",
+    "form.message": "Message (required)",
+    "form.send": "Send",
+
+    "footer.text": "Design and implementation - Jakub Lipiński"
+}

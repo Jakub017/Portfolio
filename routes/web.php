@@ -16,12 +16,16 @@ use App\Http\Controllers\ContactController;
 */
 
 
+
 Route::controller(PagesController::class)->group(function (){
     Route::get('/', 'getHomePage')->name('get.home');
     Route::get('/projekty', 'getPortfolioPage')->name('get.portfolioPage');
+    Route::get('/{locale}', 'languageHandler');
 });
 
-Route::controller(PagesController::class)->group(function (){
-    Route::post('/', [ContactController::class, 'store'])->name('contact.store');
+Route::controller(ContactController::class)->group(function (){
+    Route::post('/', 'store')->name('contact.store');
 });
+
+
 

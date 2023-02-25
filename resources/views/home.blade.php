@@ -6,36 +6,24 @@
 <div class="welcome">
     <h2 class="hi">Jakub <span class="colored">Lipiński</span></h2>
     <h1 class="title"><strong class="colored">Full-stack</strong> developer</h1>
-    <p class="welcome-description">Zajmuję się tworzeniem (oraz projektowaniem) stron i aplikacji internetowych w
-        oparciu o HTML, CSS, Javascript oraz Laravel.</p>
+    <p class="welcome-description">
+        {{ __('hero.description') }}
+    </p>
     <div class="welcome-buttons">
-        <a href="#works" class="see-works">{{__('texts.portfolio')}}</a>
-        <a href="#contact" class="see-works">{{__('texts.contact')}}</a>
+        <a href="#works" class="see-works">{{ __('menu.portfolio') }}</a>
+        <a href="#contact" class="see-works">{{ __('menu.contact') }}</a>
     </div>
 </div>
 
 <section id="about">
-    <h1 class="section-title">O mnie</h1>
-    <h3 class="section-sub-title">Poznajmy się</h3>
+    <h1 class="section-title">{{ __('about.heading') }}</h1>
+    <h3 class="section-sub-title">{{ __('about.subheading') }}</h3>
     <div class="about-me">
         <div class="about-description">
-            <p>Nazwyam się <span class="colored">Jakub Lipiński</span>, jestem 22 letnim Full-stack Developerem. Obecnie
-                mieszkam w Polsce i pracuję w agencji <span class="colored">StronyDlaFirm.eu</span>. Pracuję z witrynami
-                i aplikacjami internetowymi opartymi o HTML, CSS, Javascript oraz o jeden z frameworków PHP - Laravel.
-            </p>
-            <p>Oprócz klasycznej pracy Front-End developera, od której rozpoczęła się moja przygoda z web-developmentem,
-                rozpocząłem również działania od strony back-endu.
-                <span class="colored">Tworzę własne panele administracyjne</span> oraz korzystam z gotowych rozwiązań
-                takich jak <span>Voyager</span>. <span class="colored">Obecnie pracuję nad własnym
-                    systemem sklepów
-                    internetowych</span>, aby jeszcze bardziej poznać Laravela.</p>
-            <p>Często przed rozpoczęciem pracy nad swoim projektem, tworzę jego wizualizację w programie <span
-                    class="colored">Figma</span> lub <span class="colored">Adobe Xd</span>.</p>
-            <p>Posiadam również doświadczenie w pracy z różnymi CMS, głównie <span class="colored">Wordpress</span> oraz
-                <span class="colored">Prestashop</span>, głównie z zakresu tworzenia nowych, utrzymywania i konserwacji
-                istniejsących stron opartych na tych właśnie CMS. Zdarza się również, że <span
-                    class="colored">modyfikuję motywy pod konkretne
-                    potrzeby klienta</span>.</p>
+            <p>{{ __('about.paragraph1') }}</p>
+            <p>{{ __('about.paragraph2') }}</p>
+            <p>{{ __('about.paragraph3') }}</p>
+            <p>{{ __('about.paragraph4') }}</p>
         </div>
         <div class="me">
             <div class="me-container">
@@ -60,9 +48,9 @@
     </div>
 </section>
 
-<section id="services">
-    <h1 class="section-title">Umiejętności</h1>
-    <h3 class="section-sub-title">Technologie i narzedzia, z którymi pracuję</h3>
+<!-- <section id="services">
+    <h1 class="section-title">{{ __('skills.heading') }}</h1>
+    <h3 class="section-sub-title">{{ __('skills.subheading') }}</h3>
 
 
     <div class="services-wrapper">
@@ -112,11 +100,50 @@
 
 
     </div>
-</section>
+</section> -->
+
+
+<!-- <section id="skills">
+    <h1 class="section-title">{{ __('skills.heading') }}</h1>
+    <h3 class="section-sub-title">{{ __('skills.subheading') }}</h3>
+    <div class="skills-background"></div>
+    <div class="skills-wrapper">
+        <div class="skill-item">
+            <div class="skill-icon"></div>
+            <h3 class="skill-name">Front-End</h3>
+            <p class="skill-description"></p>
+            <p class="skill-tools-heading">Narzędzia</p>
+            <ul class="skill-list">
+                <li class="skill-item">Visual Studio Code</li>
+                <li class="skill-item">Visual Studio Code</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon"></div>
+            <h3 class="skill-name">Back-End</h3>
+            <p class="skill-description"></p>
+            <p class="skill-tools-heading">Narzędzia</p>
+            <ul class="skill-list">
+                <li class="skill-item">Visual Studio Code</li>
+                <li class="skill-item">Visual Studio Code</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon"></div>
+            <h3 class="skill-name">Dodatkowe</h3>
+            <p class="skill-description"></p>
+            <p class="skill-tools-heading">Narzędzia</p>
+            <ul class="skill-list">
+                <li class="skill-item">Visual Studio Code</li>
+                <li class="skill-item">Visual Studio Code</li>
+            </ul>
+        </div>
+    </div>
+</section> -->
 
 <section id="works">
-    <h1 class="section-title">Portfolio</h1>
-    <h3 class="section-sub-title">Moje najważniejsze projekty</h3>
+    <h1 class="section-title">{{ __('portfolio.heading') }}</h1>
+    <h3 class="section-sub-title">{{ __('portfolio.subheading') }}</h3>
     <div class="isotope">
         <button data-filter="front-end">Front-End</button>
         <button data-filter="back-end">Back-End</button>
@@ -128,20 +155,17 @@
         <div class="project-card" data-filter="front-end" data-image="justtag">
             <div class="project-photo"></div>
             <div class="project-content">
-                <h3 class="project-name">Just Tag</h3>
+                <h3 class="project-name">{{__('justtag.title')}}</h3>
                 <ul class="used_tech">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">Strona internetowa agencji badającej zachowania użytkownikw offline i
-                    online. W tym projekcie zajmowałem się tworzeniem tylko warstwy, którą widzi użytkownik z
-                    dostarczonego projektu graficznego. <span class="colored">Repozytorium Github tego projektu
-                        udostępniam tylko w celach rekrutacyjnych</span></p>
+                <p class="project-description">{{__('justtag.description')}}</p>
                 <div class="project-buttons">
-                    <a target="_blank" href="https://github.com/Jakub017/JustTag" class="project-link">Repozytorium
-                        prywatne</a>
+                    <a target="_blank" href="https://github.com/Jakub017/JustTag"
+                        class="project-link">{{__('private.repo')}}</a>
                     <a target="_blank" href="https://www.justtag.com/" class="project-link visit">Zobacz online <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -152,7 +176,7 @@
         <div class="project-card" data-filter="back-end" data-image="digitalowa">
             <div class="project-photo"></div>
             <div class="project-content">
-                <h3 class="project-name">Panel Administracyjny strony digitalowa.pl</h3>
+                <h3 class="project-name">{{__('digitalowa.title')}}</h3>
                 <ul class="used_tech">
                     <li>Laravel</li>
                     <li>Voyager</li>
@@ -160,16 +184,11 @@
                     <li>MySQL</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">Prosty panel administracyjny dla strony <a class="colored-link"
-                        href="https://digitalowa.pl/" target="_blank">digitalowa.pl</a> pozwalający na zarządzanie
-                    treścią: dodawanie usług, edycję
-                    tekstów, czy zmianę danych kontaktowych. Panel został stworzony w oparciu o pakiet Voyager. <span
-                        class="colored">Zrzuty
-                        ekranu z panelu oraz wytłumaczenie działania dostępne w pliku readme repozytorium</span>.</p>
+                <p class="project-description">{{__('digitalowa.description')}}</p>
                 <div class="project-buttons">
-                    <a target="_blank" href="https://github.com/Jakub017/crm-app" class="project-link">Repozytorium
-                        Github</a>
-                    <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/" class="project-link visit">Zobacz
+                    <a target="_blank" href="https://github.com/Jakub017/crm-app"
+                        class="project-link">{{__('github.repo')}}</a>
+                    <a target="_blank" href="https://digitalowa.pl/" class="project-link visit">Zobacz
                         online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -179,7 +198,7 @@
         <div class="project-card filter-visible" data-filter="full-stack" data-image="crm-app">
             <div class="project-photo"></div>
             <div class="project-content">
-                <h3 class="project-name">Crm App</h3>
+                <h3 class="project-name">{{__('crm.title')}}</h3>
                 <ul class="used_tech">
                     <li>HTML</li>
                     <li>SASS (BEM)</li>
@@ -188,15 +207,10 @@
                     <li>Breeze</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">Aplikacja, w której użytkownik może planować swoje wydarzenia, zapisywać
-                    dane logowania do stron internetowych, klientów FTP czy SSH. Aplikacja została również wyposażona w
-                    funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego. Oprócz podstawowych
-                    funkcji CRUD, dodałem również <span class="colored">możliwość filtrowania danych według ich typu,
-                        czy daty dodania,
-                        oraz funkcję wyszukiwarki</span>.</p>
+                <p class="project-description">{{__('crm.description')}}</p>
                 <div class="project-buttons">
-                    <a target="_blank" href="https://github.com/Jakub017/crm-app" class="project-link">Repozytorium
-                        Github</a>
+                    <a target="_blank" href="https://github.com/Jakub017/crm-app"
+                        class="project-link">{{__('github.repo')}}</a>
                     <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/" class="project-link visit">Zobacz
                         online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -205,7 +219,7 @@
         <div class="project-card filter-visible changed-order" data-filter="full-stack" data-image="dog-cafe">
             <div class="project-photo"></div>
             <div class="project-content">
-                <h3 class="project-name">Doggo Cafe</h3>
+                <h3 class="project-name">{{__('dog.title')}}</h3>
                 <ul class="used_tech">
                     <li>HTML</li>
                     <li>SASS</li>
@@ -215,16 +229,10 @@
                     <li>RecaptchaV3</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">Strona internetowa fikcyjnej kawiarni. Podczas stylowania <span
-                        class="colored">zastosowałem
-                        metodologię BEM</span>. Witryna jest wyposażona w <span class="colored"> panel administracyjny
-                        Voyager</span> do zarządzania
-                    treścią
-                    (zrzuty ekranu oraz działanie są dostępne w pliku readme repozytorium). Formularz kontaktowy jest
-                    zabezpieczony Google Recaptcha V3.</p>
+                <p class="project-description">{{__('dog.description')}}</p>
                 <div class="project-buttons">
-                    <a target="_blank" href="https://github.com/Jakub017/dog-cafe" class="project-link">Repozytorium
-                        Github</a>
+                    <a target="_blank" href="https://github.com/Jakub017/dog-cafe"
+                        class="project-link">{{__('github.repo')}}</a>
                     <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/" class="project-link visit">Zobacz
                         online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -235,17 +243,14 @@
         <div class="project-card" data-filter="cms" data-image="design">
             <div class="project-photo"></div>
             <div class="project-content">
-                <h3 class="project-name">Design Alive</h3>
+                <h3 class="project-name">{{__('design.title')}}</h3>
                 <ul class="used_tech">
                     <li>Wordpress</li>
                     <li>PHP</li>
                     <li>Obsługa</li>
                     <li>Asana</li>
                 </ul>
-                <p class="project-description">DesignAlive to portal z artykułami ze świata szeroko pojętego designu z
-                    około <span class="colored">30 tysiącami aktywnych użytkowników każdego miesiąca</span>. W
-                    tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz
-                    wprowadzaniem nowych rozwiązań do portalu.</p>
+                <p class="project-description">{{__('design.description')}}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://www.designalive.pl/" class="project-link visit">Zobacz online <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -255,14 +260,12 @@
         <div class="project-card changed-order" data-filter="cms" data-image="lasery">
             <div class="project-photo"></div>
             <div class="project-content">
-                <h3 class="project-name">Sklep IUVO laser</h3>
+                <h3 class="project-name">{{__('iuvo.title')}}</h3>
                 <ul class="used_tech">
                     <li>Prestashop</li>
                     <li>CSS</li>
                 </ul>
-                <p class="project-description">DesignAlive to portal z artykułami ze świata szeroko pojętego designu. W
-                    tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz
-                    wprowadzaniem nowych rozwiązań do portalu.</p>
+                <p class="project-description">{{__('iuvo.description')}}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://lasery-sklep.pl/" class="project-link visit">Zobacz online <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -272,38 +275,28 @@
         <div class="project-card" data-filter="cms" data-image="idea">
             <div class="project-photo"></div>
             <div class="project-content">
-                <h3 class="project-name">Idea Domu</h3>
+                <h3 class="project-name">{{__('idea.title')}}</h3>
                 <ul class="used_tech">
                     <li>Wordpress</li>
                     <li>PHP</li>
                     <li>JavaScript</li>
                     <li>Asana</li>
                 </ul>
-                <p class="project-description">Portal z artykułami zawierającymi projekty i realizacje domów
-                    nowoczesnych, a także wskazówki i ciekawoski odnośnie aranżacji wnętrz. W pracy z tą witryną zajmuję
-                    się wdrażaniem nowych rozwiązań, modyfikacją motywów, wtyczek, a także utrzymania bezpieczeństwa i
-                    szybkości strony.</p>
+                <p class="project-description">{{__('idea.description')}}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://ideadomu.pl/" class="project-link visit">Zobacz online <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     </div>
-    <!-- <a href="{{route('get.portfolioPage')}}" class="resume all">Zobacz wszystkie realizacje</a> -->
+    <a href="{{route('get.portfolioPage')}}" class="resume all">Zobacz wszystkie realizacje</a>
 </section>
 
 <section id="contact">
-    <h1 class="section-title">Kontakt</h1>
-    <h3 class="section-sub-title">Napisz do mnie</h3>
-    <p>Moja skrzynka jest zawsze otwarta, więc niezależnie od tego, czy masz pytanie lub po prostu się przywitać -
-        odpiszę tak szybko jak to możliwe!
+    <h1 class="section-title">{{ __('contact.heading') }}</h1>
+    <h3 class="section-sub-title">{{ __('contact.subheading') }}</h3>
+    <p>{{ __('contact.text') }}
         <p>
             @if($errors->any())
             <ul>
@@ -322,14 +315,15 @@
             <form action="{{route('contact.store')}}" method="POST">
                 @csrf
                 <div class="half-inputs">
-                    <input class="email" name="email" type="email" placeholder="Email (wymagane)"
+                    <input class="email" name="email" type="email" placeholder="{{__('form.email')}}"
                         value="{{old('email')}}">
-                    <input class="phone" name="phone" type="tel" placeholder="Numer telefonu" value="{{old('phone')}}">
+                    <input class="phone" name="phone" type="tel" placeholder="{{__('form.phone')}}"
+                        value="{{old('phone')}}">
                 </div>
-                <input name="subject" type="text" placeholder="Temat" value="{{old('topic')}}">
+                <input name="subject" type="text" placeholder="{{__('form.subject')}}" value="{{old('topic')}}">
                 <textarea class="message" name="message" id="" cols="30" rows="10"
-                    placeholder="Treść wiadomości (wymagane)">{{old('message')}}</textarea>
-                <input class="resume send_btn" type="submit" value="Wyślij wiadomość">
+                    placeholder="{{__('form.message')}}">{{old('message')}}</textarea>
+                <input class="resume send_btn" type="submit" value="{{__('form.send')}}">
             </form>
 </section>
 
