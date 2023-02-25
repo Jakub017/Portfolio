@@ -48,98 +48,63 @@
     </div>
 </section>
 
-<!-- <section id="services">
-    <h1 class="section-title">{{ __('skills.heading') }}</h1>
-    <h3 class="section-sub-title">{{ __('skills.subheading') }}</h3>
-
-
-    <div class="services-wrapper">
-
-        <div class="service">
-            <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
-            <h3 class="service-title">Strony internetowe</h3>
-            <p class="service-description">Wykonuję duże strony internetowe oraz proste projekty. Zdaję sobie sprawę, że
-                każdy projekt jest inny, dlatego podchodzę do niego indywidualnie dobierając najlepsze rozwiązania.
-            </p>
-        </div>
-
-        <div class="service">
-            <div class="service-icon"><i class="fa-solid fa-basket-shopping"></i></div>
-            <h3 class="service-title">Sklepy internetowe</h3>
-            <p class="service-description">Oferuję profesjonalne sklepy internetowe dostosowane do potrzeb klienta w
-                oparciu o system PrestaShop lub WooCommerce. Postaw na nowoczesność swojego biznesu i zwiększ sprzedaż.
-            </p>
-        </div>
-        <div class="service">
-            <div class="service-icon"><i class="fa-brands fa-wordpress"></i></div>
-            <h3 class="service-title">Strony oparte o wordpress</h3>
-            <p class="service-description">Moje strony Wordpress oprócz ciekawego designu posiadają także dodatkowe
-                funkcjonalności takie jak dodatkowe wersje językowe, blogi, portfolio i wiele innych!
-            </p>
-        </div>
-        <div class="service">
-            <div class="service-icon"><i class="fa-solid fa-paint-roller"></i></div>
-            <h3 class="service-title">modernizacje stron www</h3>
-            <p class="service-description">Wykonuję drobne oraz kompletne modernizacje stron internetowych. Jeśli twoja
-                strona została wykonana kilka lat temu i nie jest już atrakcyjna - nie zwlekaj. Pamiętaj, że wizerunek
-                internetowy to podstawa sukcesu.</p>
-        </div>
-        <div class="service">
-            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <h3 class="service-title">Responsywne strony internetowe</h3>
-            <p class="service-description">Wszystkie wykonywane przeze mnie strony są responsywne, to znaczy że
-                dostosowują się do wyświetlaczy urządze mobilnych takich jak smartfony i tablety.</p>
-        </div>
-        <div class="service">
-            <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
-            <h3 class="service-title">Projektowanie stron internetowych</h3>
-            <p class="service-description">Zaprojektuję layout strony internetowej w programie Figma lub Adobe XD.
-                Otrzymasz widoki twojej strony zarówno na ekrany monitorów oraz smartfonów.
-            </p>
-        </div>
-
-
-    </div>
-</section> -->
-
-
-<!-- <section id="skills">
-    <h1 class="section-title">{{ __('skills.heading') }}</h1>
-    <h3 class="section-sub-title">{{ __('skills.subheading') }}</h3>
+<section id="skills">
     <div class="skills-background"></div>
-    <div class="skills-wrapper">
-        <div class="skill-item">
-            <div class="skill-icon"></div>
-            <h3 class="skill-name">Front-End</h3>
-            <p class="skill-description"></p>
-            <p class="skill-tools-heading">Narzędzia</p>
-            <ul class="skill-list">
-                <li class="skill-item">Visual Studio Code</li>
-                <li class="skill-item">Visual Studio Code</li>
-            </ul>
-        </div>
-        <div class="skill-item">
-            <div class="skill-icon"></div>
-            <h3 class="skill-name">Back-End</h3>
-            <p class="skill-description"></p>
-            <p class="skill-tools-heading">Narzędzia</p>
-            <ul class="skill-list">
-                <li class="skill-item">Visual Studio Code</li>
-                <li class="skill-item">Visual Studio Code</li>
-            </ul>
-        </div>
-        <div class="skill-item">
-            <div class="skill-icon"></div>
-            <h3 class="skill-name">Dodatkowe</h3>
-            <p class="skill-description"></p>
-            <p class="skill-tools-heading">Narzędzia</p>
-            <ul class="skill-list">
-                <li class="skill-item">Visual Studio Code</li>
-                <li class="skill-item">Visual Studio Code</li>
-            </ul>
+    <div class="skills-section-wrapper">
+        <h1 class="section-title">{{ __('skills.heading') }}</h1>
+        <h3 class="section-sub-title">{{ __('skills.subheading') }}</h3>
+        <div class="skills-wrapper">
+            <div class="skill-item">
+                <img src="{{asset('img/frontend.png')}}" alt="" class="skill-icon">
+                <h3 class="skill-name">Front-End</h3>
+                <p class="skill-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque expedita
+                    libero dolorum maxime quae, voluptatibus, eum officiis est, maiores omnis voluptas beatae nostrum
+                    officia dolorem. Hic, ut. Totam, consequuntur officiis.</p>
+                <p class="skill-tools-heading">{{ __('skills.tools') }}</p>
+                <ul class="skill-list">
+                    <li class="skill-list-item">HTML</li>
+                    <li class="skill-list-item">CSS</li>
+                    <li class="skill-list-item">CSS</li>
+                    <li class="skill-list-item">SASS</li>
+                    <li class="skill-list-item">Bootstrap</li>
+                    <li class="skill-list-item">Javascript</li>
+                    <li class="skill-list-item">Visual Studio Code</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <img src="{{asset('img/backend.png')}}" alt="" class="skill-icon">
+                <h3 class="skill-name">Back-End</h3>
+                <p class="skill-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque expedita
+                    libero dolorum maxime quae, voluptatibus, eum officiis est, maiores omnis voluptas beatae nostrum
+                    officia dolorem. Hic, ut. Totam, consequuntur officiis.</p>
+                <p class="skill-tools-heading">{{ __('skills.tools') }}</p>
+                <ul class="skill-list">
+                    <li class="skill-list-item">PHP</li>
+                    <li class="skill-list-item">Laravel</li>
+                    <li class="skill-list-item">Voyager</li>
+                    <li class="skill-list-item">Breeze</li>
+                    <li class="skill-list-item">SQL</li>
+                    <li class="skill-list-item">Composer</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <img src="{{asset('img/other.png')}}" alt="" class="skill-icon other-icon">
+                <h3 class="skill-name">{{ __('skills.additional') }}</h3>
+                <p class="skill-description">Oprócz pisania kodu, projektuję aplikacje i strony w programach graficznych
+                    oraz posiadam doświadczenie w zarządzaniu hostingiem czy domenami.</p>
+                <p class="skill-tools-heading">{{ __('skills.additional-tools') }}</p>
+                <ul class="skill-list">
+                    <li class="skill-list-item">Git</li>
+                    <li class="skill-list-item">Figma</li>
+                    <li class="skill-list-item">Adobe Xd</li>
+                    <li class="skill-list-item">DirectAdmin</li>
+                    <li class="skill-list-item">Wordpress</li>
+                    <li class="skill-list-item">Prestashop</li>
+                </ul>
+            </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <section id="works">
     <h1 class="section-title">{{ __('portfolio.heading') }}</h1>
@@ -166,8 +131,8 @@
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/JustTag"
                         class="project-link">{{__('private.repo')}}</a>
-                    <a target="_blank" href="https://www.justtag.com/" class="project-link visit">Zobacz online <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a target="_blank" href="https://www.justtag.com/" class="project-link visit">{{__('see.online')}}
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -188,8 +153,8 @@
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/crm-app"
                         class="project-link">{{__('github.repo')}}</a>
-                    <a target="_blank" href="https://digitalowa.pl/" class="project-link visit">Zobacz
-                        online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a target="_blank" href="https://digitalowa.pl/" class="project-link visit">{{__('see.online')}} <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -211,8 +176,9 @@
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/crm-app"
                         class="project-link">{{__('github.repo')}}</a>
-                    <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/" class="project-link visit">Zobacz
-                        online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/"
+                        class="project-link visit">{{__('see.online')}} <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -233,8 +199,9 @@
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/dog-cafe"
                         class="project-link">{{__('github.repo')}}</a>
-                    <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/" class="project-link visit">Zobacz
-                        online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/"
+                        class="project-link visit">{{__('see.online')}} <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -252,7 +219,8 @@
                 </ul>
                 <p class="project-description">{{__('design.description')}}</p>
                 <div class="project-buttons">
-                    <a target="_blank" href="https://www.designalive.pl/" class="project-link visit">Zobacz online <i
+                    <a target="_blank" href="https://www.designalive.pl/"
+                        class="project-link visit">{{__('see.online')}} <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -267,8 +235,8 @@
                 </ul>
                 <p class="project-description">{{__('iuvo.description')}}</p>
                 <div class="project-buttons">
-                    <a target="_blank" href="https://lasery-sklep.pl/" class="project-link visit">Zobacz online <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a target="_blank" href="https://lasery-sklep.pl/" class="project-link visit">{{__('see.online')}}
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -284,13 +252,13 @@
                 </ul>
                 <p class="project-description">{{__('idea.description')}}</p>
                 <div class="project-buttons">
-                    <a target="_blank" href="https://ideadomu.pl/" class="project-link visit">Zobacz online <i
+                    <a target="_blank" href="https://ideadomu.pl/" class="project-link visit">{{__('see.online')}} <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <a href="{{route('get.portfolioPage')}}" class="resume all">Zobacz wszystkie realizacje</a>
+    <!-- <a href="{{route('get.portfolioPage')}}" class="resume all">{{__('see.projects')}}</a> -->
 </section>
 
 <section id="contact">

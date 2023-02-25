@@ -11,7 +11,7 @@
         <div class="close-menu"><img src="{{ asset('img/close_menu.png') }}" alt=""></div>
         <div class="mobile-logo"><img src="{{ asset('img/logo.webp') }}" alt="Jakub Lipiński logo"></div>
         <a class="menu-option" href="#about">{{ __('menu.about') }}</a>
-        <a class="menu-option" href="#services">{{ __('menu.skills') }}</a>
+        <a class="menu-option" href="#skills">{{ __('menu.skills') }}</a>
         <a class="menu-option" href="#works">{{ __('menu.portfolio') }}</a>
         <a class="menu-option" href="#contact">{{ __('menu.contact') }}</a>
         @foreach($available_locales as $locale_name => $available_locale)

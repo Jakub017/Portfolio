@@ -18,6 +18,9 @@
 
     "skills.heading": "Umiejętności",
     "skills.subheading": "Technologie i narzedzia, z którymi pracuję",
+    "skills.additional": "Dodatkowe",
+    "skills.additional-tools": "Dodatkowe narzędzia:",
+    "skills.tools": "Narzędzia i technologie:",
 
     "portfolio.heading": "Portfolio",
     "portfolio.subheading": "Moje najważniejsze projekty",
@@ -52,6 +55,8 @@
     "idea.description": "Portal z artykułami zawierającymi projekty i realizacje domów nowoczesnych, a także wskazówki i ciekawoski odnośnie aranżacji wnętrz. W pracy z tą witryną zajmuję się wdrażaniem nowych rozwiązań, modyfikacją motywów, wtyczek, a także utrzymania bezpieczeństwa i szybkości strony.",
 
     "see.projects": "Zobacz wszystkie realizacje",
+
+
 
 
     "form.email": "Email (wymagane)",
