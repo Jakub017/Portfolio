@@ -257,11 +257,11 @@ nav .hamburger-menu span {
     color: #fff;
     width: 90%;
     margin-top: 3rem;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .welcome h1 {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     margin-bottom: 10px;
     opacity: 0;
     transform: translateY(-10px);
@@ -811,7 +811,7 @@ h3.section-sub-title {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 5rem;
     border-radius: 2rem;
     overflow: hidden;
@@ -821,20 +821,17 @@ h3.section-sub-title {
 .skill-item {
     text-align: center;
     color: #fff;
-    /* min-height: 600px; */
-    flex: 1 0 400px;
     background-color: #0A192F;
     width: 100%;
     padding: 3.5rem 2rem;
     justify-self: stretch;
-    border-right: 1px solid #060F1D;
-    /* border-top: 1px solid #060F1D; */
+    border-top: 1px solid #060F1D;
+    height: 500px;
 }
 
 .skill-name {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
-    /* font-weight: bold; */
 }
 
 .skill-description {
@@ -1005,11 +1002,11 @@ form .send_btn {
 /* Media queries */
 @media (min-width: 768px) {
     .welcome h1 {
-        font-size: 3.8rem;
+        font-size: 5rem;
     }
 
     .welcome h2 {
-        font-size: 3.3rem;
+        font-size: 4.5rem;
     }
 
     .projects .project-card {
@@ -1088,16 +1085,29 @@ form .send_btn {
         font-size: 1.8rem;
     }
 
+    .skills-wrapper {
+        flex-direction: row;
+    }
+
+    .skill-item {
+        border-right: 1px solid #060F1D;
+        border-top: none;
+    }
+
+    .skill-item:last-child {
+        border-right: none;
+    }
+
     .skill-tools-heading {
         font-size: 2rem;
     }
 
     .welcome h1 {
-        font-size: 4.2rem;
+        font-size: 7rem;
     }
 
     .welcome h2 {
-        font-size: 3.7rem;
+        font-size: 6.5rem;
     }
 
     nav {
@@ -1248,31 +1258,24 @@ form .send_btn {
     }
 }
 
-@media (min-width: 1200px) {
-    .skill-item {
-        border-top: none;
-        border-right: 1px solid #0A192F;
-    }
-}
-
 @media (min-width: 1280px) {
-    .welcome h1 {
+    /* .welcome h1 {
         font-size: 5rem;
     }
 
     .welcome h2 {
         font-size: 4.5rem;
-    }
+    } */
 }
 
 @media (min-width: 2500px) {
-    .welcome h1 {
+    /* .welcome h1 {
         font-size: 5.8rem;
     }
 
     .welcome h2 {
         font-size: 5.3rem;
-    }
+    } */
 }
 
 /* Animations */

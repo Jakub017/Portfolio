@@ -20,10 +20,10 @@
     <h3 class="section-sub-title">{{ __('about.subheading') }}</h3>
     <div class="about-me">
         <div class="about-description">
-            <p>{{ __('about.paragraph1') }}</p>
-            <p>{{ __('about.paragraph2') }}</p>
-            <p>{{ __('about.paragraph3') }}</p>
-            <p>{{ __('about.paragraph4') }}</p>
+            <p>{!! __('about.paragraph1') !!}</p>
+            <p>{!! __('about.paragraph2') !!}</p>
+            <p>{!! __('about.paragraph3') !!}</p>
+            <p>{!! __('about.paragraph4') !!}</p>
         </div>
         <div class="me">
             <div class="me-container">
@@ -127,7 +127,7 @@
                     <li>JavaScript</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">{{__('justtag.description')}}</p>
+                <p class="project-description">{!! __('justtag.description') !!}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/JustTag"
                         class="project-link">{{__('private.repo')}}</a>
@@ -149,7 +149,7 @@
                     <li>MySQL</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">{{__('digitalowa.description')}}</p>
+                <p class="project-description">{!! __('digitalowa.description') !!}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/crm-app"
                         class="project-link">{{__('github.repo')}}</a>
@@ -172,7 +172,7 @@
                     <li>Breeze</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">{{__('crm.description')}}</p>
+                <p class="project-description">{!! __('crm.description') !!}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/crm-app"
                         class="project-link">{{__('github.repo')}}</a>
@@ -191,11 +191,11 @@
                     <li>SASS</li>
                     <li>Javascript</li>
                     <li>Laravel</li>
-                    <li>Breeze</li>
+                    <li>Voyager</li>
                     <li>RecaptchaV3</li>
                     <li>Git</li>
                 </ul>
-                <p class="project-description">{{__('dog.description')}}</p>
+                <p class="project-description">{!! __('dog.description') !!}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://github.com/Jakub017/dog-cafe"
                         class="project-link">{{__('github.repo')}}</a>
@@ -217,7 +217,7 @@
                     <li>Obsługa</li>
                     <li>Asana</li>
                 </ul>
-                <p class="project-description">{{__('design.description')}}</p>
+                <p class="project-description">{!! __('design.description') !!}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://www.designalive.pl/"
                         class="project-link visit">{{__('see.online')}} <i
@@ -233,7 +233,7 @@
                     <li>Prestashop</li>
                     <li>CSS</li>
                 </ul>
-                <p class="project-description">{{__('iuvo.description')}}</p>
+                <p class="project-description">{!! __('iuvo.description') !!}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://lasery-sklep.pl/" class="project-link visit">{{__('see.online')}}
                         <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -250,7 +250,7 @@
                     <li>JavaScript</li>
                     <li>Asana</li>
                 </ul>
-                <p class="project-description">{{__('idea.description')}}</p>
+                <p class="project-description">{!! __('idea.description') !!}</p>
                 <div class="project-buttons">
                     <a target="_blank" href="https://ideadomu.pl/" class="project-link visit">{{__('see.online')}} <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>

@@ -8,10 +8,10 @@
     "hero.description": "Zajmuję się tworzeniem oraz projektowaniem stron i aplikacji internetowych w oparciu o HTML, CSS, Javascript oraz Laravel.",
 
 
-    "about.paragraph1": "Nazwyam się Jakub Lipiński, jestem 22 letnim Full-stack Developerem. Obecnie mieszkam w Polsce i pracuję w agencji StronyDlaFirm.eu. Pracuję z witrynami i aplikacjami internetowymi opartymi o HTML, CSS, Javascript oraz o jeden z frameworków PHP - Laravel.",
-    "about.paragraph2": "Oprócz klasycznej pracy Front-End developera, od której rozpoczęła się moja przygoda z web-developmentem, rozpocząłem również działania od strony back-endu. Tworzę własne panele administracyjne oraz korzystam z gotowych rozwiązań takich jak Voyager. Obecnie pracuję nad własnym systemem sklepów internetowych, aby jeszcze bardziej poznać Laravela.",
-    "about.paragraph3": "Często przed rozpoczęciem pracy nad swoim projektem, tworzę jego wizualizację w programie Figma lub Adobe Xd.",
-    "about.paragraph4": "Posiadam również doświadczenie w pracy z różnymi CMS, głównie Wordpress oraz Prestashop, głównie z zakresu tworzenia nowych, utrzymywania i konserwacji istniejsących stron opartych na tych właśnie CMS. Zdarza się również, że modyfikuję motywy pod konkretne potrzeby klienta.",
+    "about.paragraph1": "Nazwyam się <span class=\"colored\">Jakub Lipiński</span>, jestem 22 letnim Full-stack Developerem. Obecnie mieszkam w Polsce i pracuję w agencji <span class=\"colored\">StronyDlaFirm.eu</span>. Pracuję z witrynami i aplikacjami internetowymi opartymi o HTML, CSS, Javascript oraz o jeden z frameworków PHP - Laravel.",
+    "about.paragraph2": "Oprócz klasycznej pracy Front-End developera, od której rozpoczęła się moja przygoda z web-developmentem, rozpocząłem również działania od strony back-endu. <span class=\"colored\">Tworzę własne panele administracyjne</span> oraz korzystam z gotowych rozwiązań takich jak Voyager. <span class=\"colored\">Obecnie pracuję nad własnym systemem sklepów internetowych</span>, aby jeszcze bardziej poznać Laravela.",
+    "about.paragraph3": "Zdarza się, że przed rozpoczęciem pracy nad swoim projektem, tworzę jego wizualizację w programie <span class=\"colored\">Figma</span> lub <span class=\"colored\">Adobe Xd</span>.",
+    "about.paragraph4": "Posiadam również doświadczenie w pracy z różnymi CMS, głównie <span class=\"colored\">Wordpress</span> oraz <span class=\"colored\">Prestashop</span>, głównie z zakresu tworzenia nowych, utrzymywania i konserwacji istniejsących stron opartych na tych właśnie CMS. Zdarza się również, że <span class=\"colored\">modyfikuję motywy pod konkretne potrzeby klienta</span>.",
 
     "about.heading": "O mnie",
     "about.subheading": "Poznajmy się",
@@ -34,25 +34,25 @@
     "see.online": "Zobacz online",
 
     "justtag.title": "Just Tag",
-    "justtag.description": "Strona internetowa agencji badającej zachowania użytkownikw offline i online. W tym projekcie zajmowałem się tworzeniem tylko warstwy, którą widzi użytkownik z dostarczonego projektu graficznego za pomocą HTML oraz czystego CSS. Repozytorium Github tego projektu udostępniam tylko w celach rekrutacyjnych.",
+    "justtag.description": "Strona internetowa agencji badającej zachowania użytkownikw offline i online. W tym projekcie zajmowałem się tworzeniem tylko warstwy, którą widzi użytkownik z dostarczonego projektu graficznego za pomocą HTML oraz czystego CSS. <span class=\"colored\">Repozytorium Github tego projektu udostępniam tylko w celach rekrutacyjnych</span>.",
 
     "digitalowa.title": "Panel Administracyjny strony digitalowa.pl",
-    "digitalowa.description": "Prosty panel administracyjny dla strony digitalowa.pl pozwalający na zarządzanie treścią: dodawanie usług, edycję tekstów, czy zmianę danych kontaktowych. Panel został stworzony w oparciu o pakiet Voyager. Zrzuty ekranu z panelu oraz wytłumaczenie działania dostępne w pliku readme repozytorium.",
+    "digitalowa.description": "Prosty panel administracyjny dla strony digitalowa.pl pozwalający na zarządzanie treścią: dodawanie usług, edycję tekstów, czy zmianę danych kontaktowych. Panel został stworzony w oparciu o pakiet Voyager. <span class=\"colored\">Zrzuty ekranu z panelu oraz wytłumaczenie działania dostępne w pliku readme repozytorium</span>.",
 
     "crm.title": "Prywatne CRM",
-    "crm.description": "Aplikacja, w której użytkownik może planować swoje wydarzenia, zapisywać dane logowania do stron internetowych, klientów FTP czy SSH. Aplikacja została również wyposażona w funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego. Oprócz podstawowych funkcji CRUD, dodałem również możliwość filtrowania danych według ich typu, czy daty dodania, oraz funkcję wyszukiwarki.",
+    "crm.description": "Aplikacja, w której użytkownik może planować swoje wydarzenia, zapisywać dane logowania do stron internetowych, klientów FTP czy SSH. Aplikacja została również wyposażona w funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego. <span class=\"colored\">Oprócz podstawowych funkcji CRUD, dodałem również możliwość filtrowania danych według ich typu, czy daty dodania, oraz funkcję wyszukiwarki</span>.",
 
     "dog.title": "Doggo Cafe",
-    "dog.description": "Strona internetowa fikcyjnej kawiarni. Podczas stylowania zastosowałem metodologię BEM. Witryna jest wyposażona w panel administracyjny Voyager do zarządzania treścią (zrzuty ekranu oraz działanie są dostępne w pliku readme repozytorium). Formularz kontaktowy jest zabezpieczony Google Recaptcha V3.",
+    "dog.description": "Strona internetowa fikcyjnej kawiarni. Podczas stylowania zastosowałem metodologię BEM. <span class=\"colored\">Witryna jest wyposażona w panel administracyjny Voyager do zarządzania treścią</span> (zrzuty ekranu oraz działanie są dostępne w pliku readme repozytorium). Formularz kontaktowy jest zabezpieczony Google Recaptcha V3.",
 
     "design.title": "Design Alive",
-    "design.description": "DesignAlive to portal z artykułami ze świata szeroko pojętego designu z około 30 tysiącami aktywnych użytkowników każdego miesiąca. W tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz wprowadzaniem nowych rozwiązań do portalu.",
+    "design.description": "DesignAlive to portal z artykułami ze świata szeroko pojętego designu <span class=\"colored\">z około 30 tysiącami aktywnych użytkowników każdego miesiąca</span>. W tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz <span class=\"colored\">wprowadzaniem nowych rozwiązań do portalu</span>.",
 
     "iuvo.title": "Sklep IUVO laser",
-    "iuvo.description": "Jest to sklep internetowy oparty o system Prestashop. W tym projekcie oprócz wdrożenia motywu czy dodania produktów i kategorii, modyfikowałem szablon oraz dodałem Tag Google",
+    "iuvo.description": "Jest to sklep internetowy oparty o system Prestashop. W tym projekcie oprócz wdrożenia motywu czy dodania produktów i kategorii, <span class=\"colored\">zmodyfikowałem szablon poprzez dodanie kilku nowych elementów</span>.",
 
     "idea.title": "Idea Domu",
-    "idea.description": "Portal z artykułami zawierającymi projekty i realizacje domów nowoczesnych, a także wskazówki i ciekawoski odnośnie aranżacji wnętrz. W pracy z tą witryną zajmuję się wdrażaniem nowych rozwiązań, modyfikacją motywów, wtyczek, a także utrzymania bezpieczeństwa i szybkości strony.",
+    "idea.description": "Portal z artykułami zawierającymi projekty i realizacje domów nowoczesnych, a także wskazówki i ciekawoski odnośnie aranżacji wnętrz. W pracy z tą witryną zajmuję się <span class=\"colored\">wdrażaniem nowych rozwiązań, modyfikacją motywów, wtyczek</span>, a także utrzymania bezpieczeństwa i szybkości strony.",
 
     "see.projects": "Zobacz wszystkie realizacje",
 

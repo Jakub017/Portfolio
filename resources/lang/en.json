@@ -8,10 +8,10 @@
     "hero.description": "I develop and design websites and web applications based on HTML, CSS, Javascript and Laravel.",
 
 
-    "about.paragraph1": "My name is Jakub Lipinski, I am a 22-year-old Full-stack Developer. I currently live in Poland and work for the agency StronyDlaFirm.eu. I work with websites and web applications based on HTML, CSS, Javascript and one of the PHP frameworks - Laravel.",
-    "about.paragraph2": "In addition to the classic work of a Front-End developer, with which my adventure with web-development began, I also started to work on the back-end side. I create my own administrative panels and use ready-made solutions such as Voyager. I am currently working on my own online store system to get even more familiar with Laravel.",
-    "about.paragraph3": "I often create a visualization of my project in Figma or Adobe Xd before I start working on it.",
-    "about.paragraph4": "I also have experience working with various CMS, mainly Wordpress and Prestashop, mainly in the field of creating new, maintaining and preserving existing sites based on these CMS. I also happen to modify themes for specific client needs.",
+    "about.paragraph1": "My name is <span class=\"colored\">Jakub Lipinski</span>, I am a 22-year-old Full-stack Developer. I currently live in Poland and work for the agency <span class=\"colored\">StronyDlaFirm.eu</span>. I work with websites and web applications based on HTML, CSS, Javascript and one of the PHP frameworks - Laravel.",
+    "about.paragraph2": "In addition to the classic work of a Front-End developer, with which my adventure with web-development began, I also started to work on the back-end side. <span class=\"colored\">I create my own admin panels</span> and use ready-made solutions such as Voyager. <span class=\"colored\">I am currently working on my own online store system</span> to get even more familiar with Laravel.",
+    "about.paragraph3": "It happens that I create a project visualisation in <span class=\"colored\">Figma</span> or <span class=\"colored\">Adobe Xd</span> before I start working on it.",
+    "about.paragraph4": "I also have experience working with various CMS, mainly <span class=\"colored\">Wordpress</span> and <span class=\"colored\">Prestashop</span>, mainly in the field of creating new, maintaining and preserving existing sites based on these CMS. I also happen to <span class=\"colored\">modify themes for specific client needs</span>.",
 
     "about.heading": "About me",
     "about.subheading": "Let's get to know each other",
@@ -34,25 +34,25 @@
     "see.online": "See online",
 
     "justtag.title": "Just Tag",
-    "justtag.description": "A website for an agency that studies offline and online user behavior. In this project, I was concerned with creating only the layer that the user sees from the provided graphic design using HTML and pure CSS. I am providing the Github repository of this project only for recruitment purposes.",
+    "justtag.description": "A website for an agency that studies offline and online user behavior. In this project, I was concerned with creating only the layer that the user sees from the provided graphic design using HTML and pure CSS. <span class=\"colored\">I provide the Github repository of this project only for recruitment purposes<span>.",
 
     "digitalowa.title": "Administration Panel of digitalowa.pl website",
-    "digitalowa.description": "Simple administration panel for digitalowa.pl website allowing to manage content: adding services, editing texts or changing contact details. The panel was created based on the Voyager package. Screenshots of the panel and an explanation of how it works are available in the readme file of the repository.",
+    "digitalowa.description": "Simple administration panel for digitalowa.pl website allowing to manage content: adding services, editing texts or changing contact details. The panel was created based on the Voyager package. <span class=\"colored\">Screenshots of the panel and an explanation of how it works are available in the readme file of the repository</span>.",
 
     "crm.title": "Private CRM",
-    "crm.description": "An application where users can schedule their events, save login credentials for websites, FTP or SSH clients. The application is also equipped with the function to add notes, edit the profile and change the color theme. In addition to the basic CRUD functions, I have also added the ability to filter data by type or date of addition, and a search engine function.",
+    "crm.description": "An application where users can schedule their events, save login credentials for websites, FTP or SSH clients. The application is also equipped with the function to add notes, edit the profile and change the color theme. <span class=\"colored\">In addition to the basic CRUD functions, I have also added the function to filter data by type or date of addition, and a search engine</span>.",
 
     "dog.title": "Doggo Cafe",
-    "dog.description": "The website of a fictional coffee shop. I used the BEM methodology during styling. The site is equipped with Voyager admin panel for content management (screenshots and operation are available in the repository readme file). The contact form is secured with Google Recaptcha V3.",
+    "dog.description": "The website of a fictional coffee shop. I used the BEM methodology during styling. <span class=\"colored\">The site is equipped with Voyager admin panel for content management</span> (screenshots and operation are available in the repository readme file). The contact form is secured with Google Recaptcha V3.",
 
     "design.title": "Design Alive",
-    "design.description": "DesignAlive is a portal with articles from the world of wide-ranging design with about 30 thousand active users every month. In this project, I was in charge of keeping the site up-to-date and secure, maintenance and introducing new solutions to the portal.",
+    "design.description": "DesignAlive is a portal with articles from the world of wide-ranging design <span class=\"colored\">with about 30 thousand active users every month</span>. In this project, I was in charge of keeping the site up-to-date and secure, maintenance and <span class=\"colored\">introducing new solutions to the website</span>.",
 
     "iuvo.title": "IUVO laser store",
-    "iuvo.description": "This is an online store based on Prestashop system. In this project, in addition to implementing the theme or adding products and categories, I modified the template and added Google Tag.",
+    "iuvo.description": "This is an online store based on Prestashop system. In this project, in addition to implementing the theme or adding products and categories, <span class=\"colored\">I modified the template by adding some new elements</span>.",
 
     "idea.title": "Idea Domu",
-    "idea.description": "Portal with articles containing projects and realizations of modern houses, as well as tips and curiosities about interior design. In my work with this site I am involved in implementing new solutions, modifying themes, plugins, as well as maintaining the security and speed of the site.",
+    "idea.description": "Portal with articles containing projects and realizations of modern houses, as well as tips and curiosities about interior design. In my work with this site <span class=\"colored\">I am involved in implementing new solutions, modifying themes, plugins</span>, as well as maintaining the security and speed of the site.",
 
     "see.projects": "See all realizations",
 
