@@ -17,6 +17,10 @@
     color: #00A789;
 }
 
+.grecaptcha-badge {
+    z-index: 10;
+}
+
 .resume {
     border: 2px solid #00A789;
     border-radius: 0.7rem;
@@ -796,7 +800,6 @@ h3.section-sub-title {
     background-color: #060F1D;
     height: 500px;
     width: 100vw;
-    z-index: 1;
 }
 
 .skills-section-wrapper {
@@ -804,7 +807,6 @@ h3.section-sub-title {
     max-width: 1300px;
     margin: 0 auto;
     width: 90%;
-    z-index: 2;
 }
 
 .skills-wrapper {
