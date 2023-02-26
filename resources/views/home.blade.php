@@ -291,6 +291,16 @@
                 <input name="subject" type="text" placeholder="{{__('form.subject')}}" value="{{old('topic')}}">
                 <textarea class="message" name="message" id="" cols="30" rows="10"
                     placeholder="{{__('form.message')}}">{{old('message')}}</textarea>
+                <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
+                    <div class="col-md-6">
+                        {!! RecaptchaV3::field('contact') !!}
+                        @if ($errors->has('g-recaptcha-response'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                </div>
                 <input class="resume send_btn" type="submit" value="{{__('form.send')}}">
             </form>
 </section>

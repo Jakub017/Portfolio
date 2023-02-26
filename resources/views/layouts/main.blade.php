@@ -40,6 +40,10 @@
     <script defer src=" {{asset('js/particles.js')}} "></script>
     <script defer src="{{asset('js/app.js')}}"></script>
     <script defer src="{{asset('js/custom.js')}}"></script>
+
+    <!-- Add recaptcha v3 -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {!! RecaptchaV3::initJs() !!}
 </head>
 
 <body>

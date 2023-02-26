@@ -21,6 +21,7 @@ class ContactController extends Controller
             'phone' => 'numeric',
             'subject' => '',
             'message' => 'required',
+            'g-recaptcha-response' => 'required|recaptchav3:contact,0.5'
         ]);
 
         Contact::create($attributes);
