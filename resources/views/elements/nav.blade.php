@@ -31,7 +31,9 @@
     </div>
 </nav>
 <nav class="nav-mobile">
+
     <div class="nav-mobile__wrapper">
+
         <a class="nav-mobile__logo-wrapper" href="{{route('home')}}"><img class="nav-mobile__logo"
                 src="{{ asset('img/logo.webp') }}" alt="Jakub Lipiński logo">
         </a>
@@ -45,6 +47,7 @@
             </div>
         </div>
         <div class="nav-mobile__menu">
+            <img src="{{asset('img/close-menu.png')}}" alt="Zamknięcie menu" class="nav-mobile__close">
             <button class="nav-mobile__option nav-mobile__option--about">{{ __('menu.about') }}</button>
             <button class="nav-mobile__option nav-mobile__option--skills">{{ __('menu.skills') }}</button>
             <button class="nav-mobile__option nav-mobile__option--panel">{{ __('menu.panel') }}</button>

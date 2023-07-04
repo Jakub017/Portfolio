@@ -145,35 +145,7 @@ desktopContactBtn.addEventListener("click", function () {
     });
 });
 
-mobileAboutBtn.addEventListener("click", function () {
-    aboutSection.scrollIntoView({
-        behavior: "smooth"
-    });
-});
 
-mobileSkillBtn.addEventListener("click", function () {
-    skillSection.scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
-mobileWizardBtn.addEventListener("click", function () {
-    wizardSection.scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
-mobileWorksBtn.addEventListener("click", function () {
-    worksSection.scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
-mobileContactBtn.addEventListener("click", function () {
-    contactSection.scrollIntoView({
-        behavior: "smooth"
-    });
-});
 
 worksBtn.addEventListener("click", function () {
     worksSection.scrollIntoView({
@@ -191,6 +163,49 @@ contactBtn.addEventListener("click", function () {
 
 const menuBtn = document.querySelector('.nav-mobile__hamburger');
 const mobileNav = document.querySelector('.nav-mobile__menu');
+
+
+mobileAboutBtn.addEventListener("click", function () {
+    aboutSection.scrollIntoView({
+        behavior: "smooth"
+    });
+    mobileNav.classList.remove('nav-mobile__menu--visible');
+});
+
+mobileSkillBtn.addEventListener("click", function () {
+    skillSection.scrollIntoView({
+        behavior: "smooth"
+    });
+    mobileNav.classList.remove('nav-mobile__menu--visible');
+});
+
+mobileWizardBtn.addEventListener("click", function () {
+    wizardSection.scrollIntoView({
+        behavior: "smooth"
+    });
+    mobileNav.classList.remove('nav-mobile__menu--visible');
+});
+
+mobileWorksBtn.addEventListener("click", function () {
+    worksSection.scrollIntoView({
+        behavior: "smooth"
+    });
+    mobileNav.classList.remove('nav-mobile__menu--visible');
+});
+
+mobileContactBtn.addEventListener("click", function () {
+    contactSection.scrollIntoView({
+        behavior: "smooth"
+    });
+    mobileNav.classList.remove('nav-mobile__menu--visible');
+});
+
+
+const closeMenuBtn = document.querySelector('.nav-mobile__close');
+
+closeMenuBtn.addEventListener("click", function () {
+    mobileNav.classList.remove('nav-mobile__menu--visible');
+});
 
 menuBtn.addEventListener("click", function () {
     mobileNav.classList.add('nav-mobile__menu--visible');

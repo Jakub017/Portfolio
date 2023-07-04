@@ -183,6 +183,15 @@ option:before {
         margin-bottom: 1rem;
         letter-spacing: 0.09rem;
     }
+
+    &__close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        max-width: 48px;
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 .nav {
