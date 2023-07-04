@@ -1,6 +1,7 @@
 <h2>Nowa wiadomość przesłana z formularza kontatkowego!</h2>
 <br>
-<b>Adres email:</b>{{$data->email}}<br>
-<b>Numer telefonu:</b>{{$data->phone}}<br>
-<b>Temat:</b>{{$data->subject}}<br>
-<b>Treść wiadomości:</b>{{$data->message}}<br>
+<p><b>Adres email</b>: {{ $attributes['email'] }}</p>
+<p><b>Telefon</b>: {{ $attributes['phone'] }}</p>
+<p><b>Temat</b>: {{ $attributes['topic'] }}</p>
+<p><b>Wiadomość</b>:</p>
+<p>{{ $attributes['message'] }}</p>

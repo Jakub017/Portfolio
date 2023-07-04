@@ -1,63 +1,73 @@
 {
     "menu.about": "O mnie",
     "menu.skills": "Umiejętności",
+    "menu.panel": "Site Wizard",
     "menu.portfolio": "Portfolio",
     "menu.contact": "Kontakt",
 
 
-    "hero.description": "Zajmuję się tworzeniem oraz projektowaniem stron i aplikacji internetowych w oparciu o HTML, CSS, Javascript oraz Laravel.",
+    "hero.description": "Zajmuję się tworzeniem stron oraz aplikacji internetowych w oparciu o HTML, CSS (SCSS oraz Tailwind), Javascript i Laravel. Obecnie rozwijam także mój projekt <button class=\"hero__link\">SiteWizard</button>.",
 
-
-    "about.paragraph1": "Nazwyam się <span class=\"colored\">Jakub Lipiński</span>, jestem 22 letnim Full-stack Developerem. Obecnie mieszkam w Polsce i pracuję w agencji <span class=\"colored\">StronyDlaFirm.eu</span>. Pracuję z witrynami i aplikacjami internetowymi opartymi o HTML, CSS, Javascript oraz o jeden z frameworków PHP - Laravel.",
-    "about.paragraph2": "Oprócz klasycznej pracy Front-End developera, od której rozpoczęła się moja przygoda z web-developmentem, rozpocząłem również działania od strony back-endu. <span class=\"colored\">Tworzę własne panele administracyjne</span> oraz korzystam z gotowych rozwiązań takich jak Voyager. <span class=\"colored\">Obecnie pracuję nad własnym systemem sklepów internetowych</span>, aby jeszcze bardziej poznać Laravela.",
-    "about.paragraph3": "Zdarza się, że przed rozpoczęciem pracy nad swoim projektem, tworzę jego wizualizację w programie <span class=\"colored\">Figma</span> lub <span class=\"colored\">Adobe Xd</span>.",
-    "about.paragraph4": "Posiadam również doświadczenie w pracy z różnymi CMS, głównie <span class=\"colored\">Wordpress</span> oraz <span class=\"colored\">Prestashop</span>, głównie z zakresu tworzenia nowych, utrzymywania i konserwacji istniejsących stron opartych na tych właśnie CMS. Zdarza się również, że <span class=\"colored\">modyfikuję motywy pod konkretne potrzeby klienta</span>.",
+    "about.paragraph1": "Nazywam się Jakub Lipiński, jestem 22 letnim Full-stack Developerem. Obecnie pracuję w agencji StronyDlaFirm.eu. Pracuję z witrynami i aplikacjami internetowymi opartymi o <span class=\"section__colored\">HTML, CSS, PHP oraz Javascript</span>.",
+    "about.paragraph2": "Jeśli chodzi o frameworki i preprocesory to mój wybór padł na <span class=\"section__colored\">Laravel oraz React</span> (w przyszłości chcę również nauczyć się Vue), a do stylowania swoich projektów używam <span class=\"section__colored\">SCSS (głównie BEM) oraz Tailwind CSS</span>.",
+    "about.paragraph3": "Obecnie moim głównym projektem jest <span class=\"section__colored\">Site Wizard - autorski panel administracyjny oparty o Laravela oraz Tailwind, który na bieżąco rozwijam</span> i używam w swoich projektach.",
+    "about.paragraph4": "Posiadam również doświadczenie w pracy z różnymi CMS, głównie <span class=\"section__colored\">Wordpress oraz Prestashop</span>, głównie z zakresu tworzenia nowych, utrzymywania i konserwacji istniejsących stron opartych na tych właśnie CMS.Zdarza się również, że modyfikuję motywy pod konkretne potrzeby klienta.",
 
     "about.heading": "O mnie",
     "about.subheading": "Poznajmy się",
 
     "skills.heading": "Umiejętności",
     "skills.subheading": "Technologie i narzedzia, z którymi pracuję",
-    "skills.additional": "Dodatkowe",
-    "skills.additional-tools": "Dodatkowe narzędzia:",
-    "skills.tools": "Narzędzia i technologie:",
+    "skills.description": "W trakcie swojej pracy z web developmentem nauczyłem się kilku języków i technologii oraz przetestowałem kilka narzędzi. Te najważniejsze wymieniłem na kartach obok.",
+    "skills.other": "Inne",
+
+    "panel.heading": "Site Wizard",
+    "panel.subheading": "Moje autorskie rozwiązanie dla stron internetowych",
+    "panel.description1": "Stworzyłem mój panel administracyjny, który wdrażam w kolejne strony internetowe. Oprócz podstawowych funkcji jak zarządzanie treścią na stronie (dodawanie wpisów, usług, meta tagów itd) wyposażyłem go w bardziej <span class=\"section__colored\">zaawansowane funkcje jak wysyłanie wiadomości Whatsapp, zarządzanie newsletterami, czy dodawanie i zarządzanie załącznikami oraz odbieranie wiadomości od zalogowanych klientów</span>.",
+    "panel.description2": "Panel umożliwia również zarządzanie administratorami - <span class=\"section__colored\">dodawanie, usuwanie i zmiany hasła kont z autoryzowanym dostępem</span>.",
+    "panel.description3": "To rozwiązanie umożliwia mi szybsze tworzenie stron internetowych, ponieważ nie muszę za każdym razem tworzyć od zera całego systemu CMS.",
+    "panel.description4": "Wykorzystane technologie i narzędzia to: <span class=\"section__colored\">HTML, Tailwind, JavaScript, PHP, Laravel, Breeze, MySQL, Laravel Scout, Twilio</span>",
+    "panel.description5": "Panel jest stale rozwijamy, a <span class=\"section__colored\">pełna lista funkcji oraz zmian jest dostępna w moim repozytorium na Githubie</span>.",
 
     "portfolio.heading": "Portfolio",
     "portfolio.subheading": "Moje najważniejsze projekty",
-
-    "contact.heading": "Kontakt",
-    "contact.subheading": "Napisz do mnie",
-    "contact.text": "Moja skrzynka jest zawsze otwarta, więc niezależnie od tego, czy masz pytanie lub po prostu się przywitać - odpiszę tak szybko jak to możliwe!",
 
     "github.repo": "Repozytorium Github",
     "private.repo": "Repozytorium prywatne",
     "see.online": "Zobacz online",
 
     "justtag.title": "Just Tag",
-    "justtag.description": "Strona internetowa agencji badającej zachowania użytkownikw offline i online. W tym projekcie zajmowałem się tworzeniem tylko warstwy, którą widzi użytkownik z dostarczonego projektu graficznego za pomocą HTML oraz czystego CSS. <span class=\"colored\">Repozytorium Github tego projektu udostępniam tylko w celach rekrutacyjnych</span>.",
+    "justtag.description": "Strona internetowa agencji badającej zachowania użytkownikw offline i online. <span class=\"section__colored\">W tym projekcie zajmowałem się implementacją warstwy front-end z dostarczonego projektu graficznego za pomocą HTML, CSS oraz Javascript</span>. Dodatkowo przygotowałem pliki .json z tłumaczeniami - strona jest dostępna w języku polskim i angielskim.",
+
+    "plastic.title": "Panel Site Wizard dla plastic-trader.com",
+    "plastic.description": "Wdrożenie mojego autorskiego panelu site wizard do strony plastic-trader.com. Administrator może zarządzać treściami na stronie (dodawanie usług, produktów, wpisów na blog) <span class=\"section__colored\">oraz komunikować się z klientami - Przesyłać im wiadomości Whatsapp i mail z poziomu panelu administracyjnego oraz odbierać wiadomości przesyłane przez zarejestrowanych klientów</span>.",
 
     "digitalowa.title": "Panel Administracyjny strony digitalowa.pl",
-    "digitalowa.description": "Prosty panel administracyjny dla strony digitalowa.pl pozwalający na zarządzanie treścią: dodawanie usług, edycję tekstów, czy zmianę danych kontaktowych. Panel został stworzony w oparciu o pakiet Voyager. <span class=\"colored\">Zrzuty ekranu z panelu oraz wytłumaczenie działania dostępne w pliku readme repozytorium</span>.",
+    "digitalowa.description": "Prosty panel administracyjny dla strony digitalowa.pl pozwalający na zarządzanie treścią: dodawanie usług, edycję tekstów, czy zmianę danych kontaktowych. <span class=\"section__colored\">Panel został stworzony w oparciu o pakiet Voyager</span>. Zrzuty ekranu z panelu oraz wytłumaczenie działania dostępne w pliku readme repozytorium.",
 
-    "crm.title": "Prywatne CRM",
-    "crm.description": "Aplikacja, w której użytkownik może planować swoje wydarzenia, zapisywać dane logowania do stron internetowych, klientów FTP czy SSH. Aplikacja została również wyposażona w funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego. <span class=\"colored\">Oprócz podstawowych funkcji CRUD, dodałem również możliwość filtrowania danych według ich typu, czy daty dodania, oraz funkcję wyszukiwarki</span>.",
+    "movie.title": "Movie App",
+    "movie.description": "Aplikacja korzystająca z API The Movie Database. Umożliwia rejestrację oraz logowanie użytkowników, przeglądanie kategorii, filmów, seriali i aktorów. <span class=\"section__colored\">Zalogowani użytkownicy mogą dodawać filmy do ulubionych oraz do własnych list. Zaimplementowana została również wyszukiwarka oparta o Livewire</span> w celu zapewnienia lepszej interaktywności.",
 
-    "dog.title": "Doggo Cafe",
-    "dog.description": "Strona internetowa fikcyjnej kawiarni. Podczas stylowania zastosowałem metodologię BEM. <span class=\"colored\">Witryna jest wyposażona w panel administracyjny Voyager do zarządzania treścią</span> (zrzuty ekranu oraz działanie są dostępne w pliku readme repozytorium). Formularz kontaktowy jest zabezpieczony Google Recaptcha V3.",
+    "euregio.title": "Euregio-Info",
+    "euregio.description": "Strona internetowa poświęcona badaniom związanym z zamknięciem granicy polsko-czeskiej. Przygotowałem w tym projekcie warstwę front-end przy użyciu HTML, SCSS oraz Javascript. <span class=\"section__colored\">W projekcie wykorzystałem również mój autorski panel Site Wizard do zarządzania zalogowanymi użytkownikami, dodawaniem badań, treści na stronę oraz do zarządzaniem Newsletterem. Administrator może w panelu zaznaczyć, które badania są dostępne dla zalogowanych użytkowników, a które dla wszystkich</span>. Strona dostępna jest w dwóch językach - polskim i czeskim.",
+
+    "crm.title": "Prywatny organizer",
+    "crm.description": "Aplikacja, w której użytkownik może planować swoje wydarzenia, zapisywać dane logowania do stron internetowych, klientów FTP czy SSH. Aplikacja została również wyposażona w funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego. <span class=\"section__colored\">Oprócz podstawowych funkcji CRUD, dodałem również możliwość filtrowania danych według ich typu, czy daty dodania, oraz funkcję wyszukiwarki</span>.",
 
     "design.title": "Design Alive",
-    "design.description": "DesignAlive to portal z artykułami ze świata szeroko pojętego designu <span class=\"colored\">z około 30 tysiącami aktywnych użytkowników każdego miesiąca</span>. W tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz <span class=\"colored\">wprowadzaniem nowych rozwiązań do portalu</span>.",
+    "design.description": "DesignAlive to portal z artykułami ze świata szeroko pojętego designu <span class=\"section__colored\">z około 30 tysiącami aktywnych użytkowników każdego miesiąca</span>. W tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz <span class=\"colored\">wprowadzaniem nowych rozwiązań do portalu</span>.",
 
     "iuvo.title": "Sklep IUVO laser",
-    "iuvo.description": "Jest to sklep internetowy oparty o system Prestashop. W tym projekcie oprócz wdrożenia motywu czy dodania produktów i kategorii, <span class=\"colored\">zmodyfikowałem szablon poprzez dodanie kilku nowych elementów</span>.",
+    "iuvo.description": "Jest to sklep internetowy oparty o system Prestashop. W tym projekcie oprócz wdrożenia motywu czy dodania produktów i kategorii, <span class=\"section__colored\">zmodyfikowałem szablon i wtyczki według polecenia klienta</span>.",
 
     "idea.title": "Idea Domu",
-    "idea.description": "Portal z artykułami zawierającymi projekty i realizacje domów nowoczesnych, a także wskazówki i ciekawoski odnośnie aranżacji wnętrz. W pracy z tą witryną zajmuję się <span class=\"colored\">wdrażaniem nowych rozwiązań, modyfikacją motywów, wtyczek</span>, a także utrzymania bezpieczeństwa i szybkości strony.",
+    "idea.description": "Portal z artykułami zawierającymi projekty i realizacje domów nowoczesnych, a także wskazówki i ciekawoski odnośnie aranżacji wnętrz. W pracy z tą witryną zajmuję się <span class=\"section__colored\">wdrażaniem nowych rozwiązań, modyfikacją motywów, wtyczek</span>, a także utrzymania bezpieczeństwa i szybkości strony.",
 
     "see.projects": "Zobacz wszystkie realizacje",
 
-
-
+    "contact.heading": "Kontakt",
+    "contact.subheading": "Napisz do mnie",
+    "contact.description": "Moja skrzynka jest zawsze otwarta, więc niezależnie od tego, czy masz pytanie lub po prostu się przywitać - odpiszę tak szybko jak to możliwe!",
 
     "form.email": "Email (wymagane)",
     "form.phone": "Numer telefonu",

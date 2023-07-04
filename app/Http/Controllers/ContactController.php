@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
-use App\Models\Contact;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -14,19 +15,18 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function send(Request $request)
     {
         $attributes = $request->validate([
             'email' => 'required|email',
-            'phone' => 'numeric',
-            'subject' => '',
+            'topic' => 'required',
+            'phone' => 'nullable',
             'message' => 'required',
-            'g-recaptcha-response' => 'required|recaptchav3:contact,0.5'
         ]);
 
-        Contact::create($attributes);
+        Mail::to('kontakt@lipinskijakub.pl')->send(new ContactMail($attributes));
 
-        return redirect()->back()->with(['success' => 'Dziękuję za wiadomość :) Zwykle odpowiadam w ciągu jednego dnia roboczego.']);
+        return redirect()->back()->with(['success' => 'Dziękuję za wiadomość! Zwykle odpowiadam w ciągu jednego dnia roboczego.']);
     }
 
 }

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Middleware\Session;
+use Illuminate\Support\Facades\App;
 
 class PagesController extends Controller
 {
@@ -15,10 +15,10 @@ class PagesController extends Controller
         return view('projects');
     }
 
-    public function languageHandler($locale) {
-    app()->setLocale($locale);
-    session()->put('locale', $locale);
-
-    return redirect()->back();
+    public function setLocale(Request $request)
+    {
+        $locale = $request->input('locale');
+        App::setLocale($locale);
+        return redirect()->back();
     }
 }

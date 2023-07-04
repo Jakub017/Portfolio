@@ -3,7 +3,6 @@
 namespace App\Mail;
   
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
   
@@ -11,16 +10,16 @@ class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
    
-    public $data;
+    public $attributes;
   
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($attributes)
     {
-        $this->data = $data;
+        $this->attributes = $attributes;
     }
   
     /**
@@ -30,7 +29,10 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Formularz kontaktowy'. $this->data->subject)
-                    ->view('emails.contact');
+        return $this->subject('lipinskijakub.pl - '. $this->attributes['topic'])
+                    ->view('emails.contact')
+                    ->with([
+            'attributes' => $this->attributes,
+        ]);
     }
 }

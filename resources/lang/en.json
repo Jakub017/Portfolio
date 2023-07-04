@@ -1,66 +1,82 @@
 {
     "menu.about": "About me",
     "menu.skills": "Skills",
+    "menu.panel": "Site Wizard",
     "menu.portfolio": "Portfolio",
     "menu.contact": "Contact",
 
 
-    "hero.description": "I develop and design websites and web applications based on HTML, CSS, Javascript and Laravel.",
+    "hero.description": "I develop websites and web applications based on HTML, CSS (SCSS, Tailwind), Javascript and Laravel. I am also currently developing my <button class=\"hero__link\">SiteWizard</button> project.",
 
 
-    "about.paragraph1": "My name is <span class=\"colored\">Jakub Lipinski</span>, I am a 22-year-old Full-stack Developer. I currently live in Poland and work for the agency <span class=\"colored\">StronyDlaFirm.eu</span>. I work with websites and web applications based on HTML, CSS, Javascript and one of the PHP frameworks - Laravel.",
-    "about.paragraph2": "In addition to the classic work of a Front-End developer, with which my adventure with web-development began, I also started to work on the back-end side. <span class=\"colored\">I create my own admin panels</span> and use ready-made solutions such as Voyager. <span class=\"colored\">I am currently working on my own online store system</span> to get even more familiar with Laravel.",
-    "about.paragraph3": "It happens that I create a project visualisation in <span class=\"colored\">Figma</span> or <span class=\"colored\">Adobe Xd</span> before I start working on it.",
-    "about.paragraph4": "I also have experience working with various CMS, mainly <span class=\"colored\">Wordpress</span> and <span class=\"colored\">Prestashop</span>, mainly in the field of creating new, maintaining and preserving existing sites based on these CMS. I also happen to <span class=\"colored\">modify themes for specific client needs</span>.",
+    "about.paragraph1": "My name is Jakub Lipinski, I am a 22-year-old Full-stack Developer. I am currently working at the agency StronyDlaFirm.eu. I work with websites and web applications based on <span class=\"section__colored\">HTML, CSS, PHP and Javascript</span>.",
+    "about.paragraph2": "As for frameworks and preprocessors, my choice is <span class=\"section__colored\">Laravel and React</span> (in the future I also want to learn Vue), and for styling my projects I use <span class=\"section__colored\">SCSS (mainly BEM) and Tailwind CSS</span>.",
+    "about.paragraph3": "Currently, my main project is <span class=\"section__colored\">Site Wizard - my own admin panel based on Laravel and Tailwind, which I develop</span> on an ongoing basis and use in my projects.",
+    "about.paragraph4": "I also have experience working with various CMS, mainly <span class=\"section__colored\">Wordpress and Prestashop</span>, mainly in the field of creating new, maintaining and upkeep of existing sites based on these particular CMS. I also sometimes modify themes for specific client needs.",
 
     "about.heading": "About me",
     "about.subheading": "Let's get to know each other",
 
     "skills.heading": "Skills",
     "skills.subheading": "Technologies and tools I work with",
-    "skills.additional": "Additional",
-    "skills.additional-tools": "Additional tools:",
-    "skills.tools": "Tools and technologies:",
+    "skills.description": "In the course of my work with web development, I learned several languages and technologies and tested several tools. I have listed the most important ones on those cards.",
+    "skills.other": "Other",
+
+    "panel.heading": "Site Wizard",
+    "panel.subheading": "My own admin panel",
+    "panel.description1": "I've created my admin panel, which I am implementing in more websites. In addition to basic functions like managing content on the site (adding posts, services, meta tags, etc.), I equipped it with more <span class=\"section__colored\">advanced functions like sending Whatsapp messages, managing newsletters, or adding and managing attachments and receiving messages from logged-in customers</span>.",
+    "panel.description2": "The panel also allows managing administrators - <span class=\"section__colored\">adding, deleting and changing passwords of accounts with authorized access</span>.",
+    "panel.description3": "This solution allows me to create websites faster, because I don't have to create an entire CMS from scratch every time.",
+    "panel.description4": "The technologies and tools used are: <span class=\"section__colored\">HTML, Tailwind, JavaScript, PHP, Laravel, Breeze, MySQL, Laravel Scout, Twilio</span>.",
+    "panel.description5": "The panel is constantly evolving, and <span class=\"section__colored\">the full list of features and changes is available in my repository on Github</span>.",
 
     "portfolio.heading": "Portfolio",
     "portfolio.subheading": "My major projects",
-
-    "contact.heading": "Contact",
-    "contact.subheading": "Get in touch",
-    "contact.text": "My mailbox is always open, so whether you have a question or just to say hello - I will write back as soon as possible!",
 
     "github.repo": "Github repository",
     "private.repo": "Private repository",
     "see.online": "See online",
 
     "justtag.title": "Just Tag",
-    "justtag.description": "A website for an agency that studies offline and online user behavior. In this project, I was concerned with creating only the layer that the user sees from the provided graphic design using HTML and pure CSS. <span class=\"colored\">I provide the Github repository of this project only for recruitment purposes<span>.",
+    "justtag.description": "Website for an agency that researches user behaviour offline and online. In this project, <span class=\"section__colored\">I dealt with the implementation of the front-end layer from the provided graphic design using HTML, CSS and Javascript</span>. Additionally, I prepared .json files with translations - the website is available in Polish and English.",
+
+    "plastic.title": "Site Wizard panel for plastic-trader.com",
+    "plastic.description": "Implementation of my site wizard panel for plastic-trader.com. The administrator can manage content on the site (adding services, products, blog posts) <span class=\"section__colored\">and communicate with customers - Send them Whatsapp messages and email from the admin panel and receive messages sent by registered customers</span>.",
 
     "digitalowa.title": "Administration Panel of digitalowa.pl website",
-    "digitalowa.description": "Simple administration panel for digitalowa.pl website allowing to manage content: adding services, editing texts or changing contact details. The panel was created based on the Voyager package. <span class=\"colored\">Screenshots of the panel and an explanation of how it works are available in the readme file of the repository</span>.",
+    "digitalowa.description": "Simple administration panel for digitalowa.pl website allowing to manage content: adding services, editing texts or changing contact details. <span class=\"section__colored\">The panel was created based on the Voyager package</span>. Screenshots of the panel and an explanation of how it works are available in the readme file of the repository.",
 
-    "crm.title": "Private CRM",
-    "crm.description": "An application where users can schedule their events, save login credentials for websites, FTP or SSH clients. The application is also equipped with the function to add notes, edit the profile and change the color theme. <span class=\"colored\">In addition to the basic CRUD functions, I have also added the function to filter data by type or date of addition, and a search engine</span>.",
+    "movie.title": "Movie App",
+    "movie.description": "An application that uses The Movie Database API. It allows users to register and log in, browse categories, movies, series and actors. <span class=\"section__colored\">Logged in users can add movies to favorites and to their own lists. A Livewire-based search engine is also implemented</span> for better interactivity.",
 
-    "dog.title": "Doggo Cafe",
-    "dog.description": "The website of a fictional coffee shop. I used the BEM methodology during styling. <span class=\"colored\">The site is equipped with Voyager admin panel for content management</span> (screenshots and operation are available in the repository readme file). The contact form is secured with Google Recaptcha V3.",
+    "euregio.title": "Euregio-Info",
+    "euregio.description": "A website dedicated to research related to the closure of the Polish-Czech border. I prepared the front-end layer in this project using HTML, SCSS and Javascript. <span class=\"section__colored\">I also used my Site Wizard panel in the project to manage logged-in users, add studies, content to the site and to manage the Newsletter. The administrator can mark in the panel which studies are available for logged-in users and which are available for everyone</span>. The site is available in two languages - Polish and Czech.",
+
+    "crm.title": "Personal organizer",
+    "crm.description": "An application where users can schedule their events, save login credentials for websites, FTP or SSH clients. The application is also equipped with the function to add notes, edit the profile and change the color theme. <span class=\"section__colored\">In addition to the basic CRUD functions, I have also added the function to filter data by type or date of addition, and a search engine</span>.",
 
     "design.title": "Design Alive",
-    "design.description": "DesignAlive is a portal with articles from the world of wide-ranging design <span class=\"colored\">with about 30 thousand active users every month</span>. In this project, I was in charge of keeping the site up-to-date and secure, maintenance and <span class=\"colored\">introducing new solutions to the website</span>.",
+    "design.description": "DesignAlive is a portal with articles from the world of wide-ranging design <span class=\"section__colored\">with about 30 thousand active users every month</span>. In this project, I was in charge of keeping the site up-to-date and secure, maintenance and <span class=\"section__colored\">introducing new solutions to the website</span>.",
 
     "iuvo.title": "IUVO laser store",
-    "iuvo.description": "This is an online store based on Prestashop system. In this project, in addition to implementing the theme or adding products and categories, <span class=\"colored\">I modified the template by adding some new elements</span>.",
+    "iuvo.description": "This is an online store based on Prestashop system. In this project, in addition to implementing the theme or adding products and categories, <span class=\"section__colored\">I modified the template and plug-ins according to the client's instructions</span>.",
 
     "idea.title": "Idea Domu",
-    "idea.description": "Portal with articles containing projects and realizations of modern houses, as well as tips and curiosities about interior design. In my work with this site <span class=\"colored\">I am involved in implementing new solutions, modifying themes, plugins</span>, as well as maintaining the security and speed of the site.",
+    "idea.description": "Portal with articles containing projects and realizations of modern houses, as well as tips and curiosities about interior design. In my work with this site <span class=\"section__colored\">I am involved in implementing new solutions, modifying themes, plugins</span>, as well as maintaining the security and speed of the site.",
 
     "see.projects": "See all realizations",
+
+
+    "contact.heading": "Contact",
+    "contact.subheading": "Get in touch",
+    "contact.description": "My inbox is always open, so whether you have a question or just to say hello - I'll write back as soon as possible!",
+
 
     "form.email": "Email (required)",
     "form.phone": "Phone number",
     "form.subject": "Subject",
     "form.message": "Message (required)",
-    "form.send": "Send",
+    "form.send": "Send message",
 
     "footer.text": "Design and implementation - Jakub Lipiński"
 }

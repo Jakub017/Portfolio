@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="{{app()->getLocale()}}">
 
 <head>
     <!-- Favicon -->
@@ -13,31 +13,31 @@
     <!-- Meta Tags -->
     <title>Jakub Lipiński - Fullstack Developer</title>
     <meta charset="utf-8">
-    <meta name="description"
-        content="Profesjonalne, responsywne strony i sklepy internetowe dla osób prywatnych i firm.">
-    <meta name="keywords"
-        content="strony, internetowe, responsywne, strony, reklama, strony, dla, firm, sklepy, internetowe, cieszyn">
+    <meta name="description" content="Jakub Lipiński - Fullstack Developer">
+    <meta name="keywords" content="fullstack, developer, jakub lipiński, strony, internetowe responsywne, reklama, dla, firm, sklepy,
+            cieszyn">
     <meta name="author" content="Jakub Lipiński" />
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:description"
-        content="Profesjonalne, responsywne strony i sklepy internetowe dla osób prywatnych i firm." />
+    <meta property="og:description" ccontent="Jakub Lipiński - Fullstack Developer" />
     <meta property='og:image' content="{{asset('img/og-image.png')}}" />
 
     <!-- Google Fonts -->
-    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/77b0ecbb1c.js" crossorigin="anonymous"></script>
 
-    <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="{{ asset('css/app.css') }}" media="screen">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-    <!-- Scripts -->
-    <script defer src=" {{asset('js/particles.js')}} "></script>
+    <!-- JS -->
+    <script defer src="{{asset('js/particles.js')}} "></script>
     <script defer src="{{asset('js/app.js')}}"></script>
     <script defer src="{{asset('js/custom.js')}}"></script>
 
@@ -53,5 +53,34 @@
 
     @include('elements.footer')
 </body>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper2 = new Swiper(".skills__swiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
+
+    var swiper = new Swiper(".panel__swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 10,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+
+</script>
 
 </html>

@@ -1,26 +1,26 @@
-// Portfolio filter start
+// Portfolio filter starts
 
-const projectButtons = [...document.querySelectorAll('.isotope button')];
-const projects = [...document.querySelectorAll('.projects .project-card')];
+const projectButtons = [...document.querySelectorAll('.works__isotope-button')];
+const projects = [...document.querySelectorAll('.works__card')];
 
 projectButtons.forEach((projectButton) => {
     projectButton.addEventListener("click", function () {
         for (let i = 0; i < projectButtons.length; i++) {
-            projectButtons[i].classList.remove('active');
+            projectButtons[i].classList.remove('works__isotope-button--active');
         }
-        projectButton.classList.add('active');
+        projectButton.classList.add('works__isotope-button--active');
     })
 })
 
 
 function hide(element) {
-    element.classList.remove('filter-visible')
-    element.classList.remove('filter-hide');
+    element.classList.remove('works__card--visible')
+    element.classList.remove('works__card--hide');
 }
 
 function show(element) {
-    element.classList.add('filter-visible');
-    element.classList.add('filter-faded-in');
+    element.classList.add('works__card--visible');
+    element.classList.add('works__card--faded-in');
 }
 
 
@@ -29,8 +29,8 @@ projectButtons.forEach((projectButton) => {
         if (projectButton.getAttribute("data-filter") === "front-end") {
             projects.forEach((project) => {
                 if (project.getAttribute('data-filter') !== "front-end") {
-                    project.classList.add('filter-hide');
-                    project.classList.remove('filter-faded-in');
+                    project.classList.add('works__card--hide');
+                    project.classList.remove('works__card--faded-in');
 
                     setTimeout(hide, 500, project);
 
@@ -42,8 +42,8 @@ projectButtons.forEach((projectButton) => {
         } else if (projectButton.getAttribute("data-filter") === "back-end") {
             projects.forEach((project) => {
                 if (project.getAttribute('data-filter') !== "back-end") {
-                    project.classList.add('filter-hide');
-                    project.classList.remove('filter-faded-in');
+                    project.classList.add('works__card--hide');
+                    project.classList.remove('works__card--faded-in');
 
                     setTimeout(hide, 500, project);
 
@@ -55,8 +55,8 @@ projectButtons.forEach((projectButton) => {
         } else if (projectButton.getAttribute("data-filter") === "full-stack") {
             projects.forEach((project) => {
                 if (project.getAttribute('data-filter') !== "full-stack") {
-                    project.classList.add('filter-hide');
-                    project.classList.remove('filter-faded-in');
+                    project.classList.add('works__card--hide');
+                    project.classList.remove('works__card--faded-in');
 
                     setTimeout(hide, 500, project);
 
@@ -68,8 +68,8 @@ projectButtons.forEach((projectButton) => {
         } else if (projectButton.getAttribute("data-filter") === "cms") {
             projects.forEach((project) => {
                 if (project.getAttribute('data-filter') !== "cms") {
-                    project.classList.add('filter-hide');
-                    project.classList.remove('filter-faded-in');
+                    project.classList.add('works__card--hide');
+                    project.classList.remove('works__card--faded-in');
 
                     setTimeout(hide, 500, project);
 
@@ -82,77 +82,116 @@ projectButtons.forEach((projectButton) => {
     })
 })
 
-// Portfolio filter end
+// Portfolio filter ends
 
 
+// Scroll to sections starts
 
-// Services fadeIn start
+const worksBtn = document.querySelector('.hero__button--works');
+const contactBtn = document.querySelector('.hero__button--contact');
 
-let scrollValue = 0;
-let viewportHeight = document.documentElement.clientHeight;
-const servicesHeight = [6];
-const servicesFromTop = [6];
-const serviceItems = [...document.querySelectorAll('.services-wrapper .service')];
+const desktopAboutBtn = document.querySelector('.nav__option--about');
+const desktopSkillBtn = document.querySelector('.nav__option--skills');
+const desktopWizardBtn = document.querySelector('.nav__option--panel');
+const desktopWorksBtn = document.querySelector('.nav__option--works');
+const desktopContactBtn = document.querySelector('.nav__option--contact');
 
-serviceItems.forEach((serviceItem, i) => {
-    servicesHeight[i] = serviceItem.offsetHeight;
-})
+const mobileAboutBtn = document.querySelector('.nav-mobile__option--about');
+const mobileSkillBtn = document.querySelector('.nav-mobile__option--skills');
+const mobileWizardBtn = document.querySelector('.nav-mobile__option--panel');
+const mobileWorksBtn = document.querySelector('.nav-mobile__option--works');
+const mobileContactBtn = document.querySelector('.nav-mobile__option--contact');
 
-serviceItems.forEach((serviceItem, i) => {
-    servicesFromTop[i] = serviceItem.offsetTop;
-})
+const worksSection = document.querySelector('.works');
+const contactSection = document.querySelector('.contact');
+const aboutSection = document.querySelector('.about');
+const skillSection = document.querySelector('.skills');
+const wizardSection = document.querySelector('.panel');
+const heroWizardBtn = document.querySelector('.hero__link');
 
-document.addEventListener('scroll', function () {
-    scrollValue = document.body.scrollTop || document.documentElement.scrollTop;
+desktopAboutBtn.addEventListener("click", function () {
+    aboutSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-    serviceItems.forEach((serviceItem, i) => {
-        if (scrollValue >= servicesFromTop[i] - viewportHeight + servicesHeight[i]) {
-            serviceItem.classList.add("active");
-        }
-    })
+heroWizardBtn.addEventListener("click", function () {
+    wizardSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-})
+desktopSkillBtn.addEventListener("click", function () {
+    skillSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-// Services fadeIn end
+desktopWizardBtn.addEventListener("click", function () {
+    wizardSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-// Mobile menu start
+desktopWorksBtn.addEventListener("click", function () {
+    worksSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-const hamburgerBtn = document.querySelector('.hamburger-menu');
-const menuContainer = document.querySelector('.menu-list');
-const closeMenuBtn = document.querySelector('.close-menu');
-const menuOptions = [...document.querySelectorAll('.menu-option')];
+desktopContactBtn.addEventListener("click", function () {
+    contactSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-hamburgerBtn.addEventListener("click", function () {
-    menuContainer.classList.add('active');
-})
+mobileAboutBtn.addEventListener("click", function () {
+    aboutSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-closeMenuBtn.addEventListener("click", function () {
-    menuContainer.classList.remove('active');
-})
+mobileSkillBtn.addEventListener("click", function () {
+    skillSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-menuOptions.forEach((menuOption) => {
-    menuOption.addEventListener("click", function () {
-        menuContainer.classList.remove('active');
-    })
-})
+mobileWizardBtn.addEventListener("click", function () {
+    wizardSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-// Mobile menu end
+mobileWorksBtn.addEventListener("click", function () {
+    worksSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-// Valuation box starts
+mobileContactBtn.addEventListener("click", function () {
+    contactSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-const valuationBtn = document.querySelector('.quick-valuation');
-const valuationBox = document.querySelector('.valuation-box');
-const closeValuation = document.querySelector('.close-valuation');
-const darkBackground = document.querySelector('#dark-background');
+worksBtn.addEventListener("click", function () {
+    worksSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
+contactBtn.addEventListener("click", function () {
+    contactSection.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-valuationBtn.addEventListener("click", function () {
-    valuationBox.classList.add("active");
-    darkBackground.classList.add("active");
-})
+// Mobile menu starts
 
-closeValuation.addEventListener("click", function () {
-    valuationBox.classList.remove("active");
-    darkBackground.classList.remove("active");
-})
-// Valuation box ends
+const menuBtn = document.querySelector('.nav-mobile__hamburger');
+const mobileNav = document.querySelector('.nav-mobile__menu');
+
+menuBtn.addEventListener("click", function () {
+    mobileNav.classList.add('nav-mobile__menu--visible');
+});
