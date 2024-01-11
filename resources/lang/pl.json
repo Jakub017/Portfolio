@@ -63,7 +63,8 @@
     "idea.title": "Idea Domu",
     "idea.description": "Portal z artykułami zawierającymi projekty i realizacje domów nowoczesnych, a także wskazówki i ciekawoski odnośnie aranżacji wnętrz. W pracy z tą witryną zajmuję się <span class=\"section__colored\">wdrażaniem nowych rozwiązań, modyfikacją motywów, wtyczek</span>, a także utrzymania bezpieczeństwa i szybkości strony.",
 
-    "see.projects": "Zobacz wszystkie realizacje",
+    "works.all": "Zobacz wszystkie realizacje",
+    "projects.heading": "Pozostałe projekty",
 
     "contact.heading": "Kontakt",
     "contact.subheading": "Napisz do mnie",

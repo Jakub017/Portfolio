@@ -11,7 +11,7 @@ class PagesController extends Controller
         return view('home');
     }
 
-    public function getPortfolioPage() {
+    public function projects() {
         return view('projects');
     }
 

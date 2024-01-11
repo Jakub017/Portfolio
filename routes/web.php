@@ -21,7 +21,7 @@ use App\Http\Controllers\ContactController;
 
     Route::controller(PagesController::class)->group(function (){
         Route::get('/', 'getHomePage')->name('home');
-        Route::get('/projekty', 'getPortfolioPage')->name('portfolio');
+        Route::get('/projekty', 'projects')->name('projects');
     });
 
     Route::post('/set-locale', function (Request $request) {

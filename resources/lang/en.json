@@ -64,8 +64,8 @@
     "idea.title": "Idea Domu",
     "idea.description": "Portal with articles containing projects and realizations of modern houses, as well as tips and curiosities about interior design. In my work with this site <span class=\"section__colored\">I am involved in implementing new solutions, modifying themes, plugins</span>, as well as maintaining the security and speed of the site.",
 
-    "see.projects": "See all realizations",
-
+    "works.all": "See all realizations",
+    "projects.heading": "All projects",
 
     "contact.heading": "Contact",
     "contact.subheading": "Get in touch",
