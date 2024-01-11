@@ -1,14 +1,4 @@
-import {
-    defineConfig
-} from 'vite';
-import laravel from 'laravel-vite-plugin';
+// webpack.mix.js
+let mix = require('laravel-mix');
 
-export default defineConfig({
-    plugins: [
-        laravel([
-            'resources/css/app.css',
-
-            'resources/js/app.js',
-        ]),
-    ],
-});
+mix.sass('resources/scss/app.scss', 'public/css/app.css');

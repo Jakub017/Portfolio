@@ -14,26 +14,13 @@
         <div class="nav__buttons">
             <a target="_blank" href="{{asset('pdf/jakub_lipinski_cv.pdf')}}" class="nav__cv">Curriculum
                 vitae</a>
-            <!-- <form action="{{ route('set.locale') }}" method="POST" class="nav__form">
-                @csrf
-                <label class="nav__label" for="pl">
-                    <img class="nav__flag" src="{{asset('img/pl.png')}}" alt="Option 1">
-                    <input type="radio" class="nav__radio" name="locale" value="pl"
-                        onclick="document.querySelector('.nav__form').submit()">
-                </label>
-                <label class="nav__label" for="en">
-                    <img class="nav__flag" src="{{asset('img/en.png')}}" alt="Option 2">
-                    <input type="radio" class="nav__radio" name="locale" value="en"
-                        onclick="document.querySelector('.nav__form').submit()">
-                </label>
-            </form> -->
         </div>
     </div>
 </nav>
+
+
 <nav class="nav-mobile">
-
     <div class="nav-mobile__wrapper">
-
         <a class="nav-mobile__logo-wrapper" href="{{route('home')}}"><img class="nav-mobile__logo"
                 src="{{ asset('img/logo.webp') }}" alt="Jakub Lipiński logo">
         </a>

@@ -210,3 +210,21 @@ closeMenuBtn.addEventListener("click", function () {
 menuBtn.addEventListener("click", function () {
     mobileNav.classList.add('nav-mobile__menu--visible');
 });
+
+
+
+// Menu hover effect
+
+const menuOptions = [...document.querySelectorAll('.nav__option')];
+
+menuOptions.forEach((menuOption) => {
+    menuOption.addEventListener("mouseover", function () {
+        menuOption.classList.add('nav__option--hover');
+    })
+});
+
+menuOptions.forEach((menuOption) => {
+    menuOption.addEventListener("mouseout", function () {
+        menuOption.classList.remove('nav__option--hover');
+    })
+});

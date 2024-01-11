@@ -164,7 +164,6 @@ option:before {
         border: none;
         outline: none;
         transition: 0.2s ease-in-out;
-        // font-weight: 600;
         text-align: left;
 
         &:hover {
@@ -981,7 +980,7 @@ option:before {
         outline: none;
         border-radius: .5rem;
         color: #888;
-
+        resize: none;
 
         &:focus {
             border-color: $main-color;
@@ -1437,5 +1436,30 @@ option:before {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+        left: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes underline-reverse {
+    from {
+        width: 100%;
+        left: auto;
+        right: 0;
+    }
+
+    to {
+        width: 0;
+        left: auto;
+        right: 0;
     }
 }

@@ -88,10 +88,11 @@
                             <ul class="skills__list">
                                 <li class="skills__item">Laravel</li>
                                 <li class="skills__item">Laravel Scout</li>
-                                <li class="skills__item">Laravel Breeze</li>
+                                <li class="skills__item">Laravel Livewire</li>
                                 <li class="skills__item">Laravel Socialite</li>
                             </ul>
                             <ul class="skills__list">
+                                <li class="skills__item">Laravel Breeze</li>
                                 <li class="skills__item">PHP</li>
                                 <li class="skills__item">Voyager</li>
                                 <li class="skills__item">MySQL</li>
@@ -144,24 +145,20 @@
             <div class="swiper mySwiper panel__swiper">
                 <div class="swiper-wrapper panel__swiper-wrapper">
                     <div class="swiper-slide panel__swiper-slide">
-                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/admin-records.webp')}}"
+                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/dashboard.webp')}}"
+                            alt="Pulpit w panelu administracyjnym Site Wizard" />
+                    </div>
+                    <div class="swiper-slide panel__swiper-slide">
+                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/index_view.webp')}}"
                             alt="Lista rekordów w panelu administracyjnym Site Wizard" />
                     </div>
                     <div class="swiper-slide panel__swiper-slide">
-                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/admin-add.webp')}}"
+                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/support.webp')}}"
+                            alt="Formularz kontaktowy w panelu administracyjnym Site Wizard" />
+                    </div>
+                    <div class="swiper-slide panel__swiper-slide">
+                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/add_view.webp')}}"
                             alt="Dodawanie rekordu w panelu administracyjnym Site Wizard" />
-                    </div>
-                    <div class="swiper-slide panel__swiper-slide">
-                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/admin-message.webp')}}"
-                            alt="Wysyłanie wiadomości Whatsapp w panelu administracyjnym Site Wizard" />
-                    </div>
-                    <div class="swiper-slide panel__swiper-slide">
-                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/admin-edit.webp')}}"
-                            alt="Edycja rekordu w panelu administracyjnym Site Wizard" />
-                    </div>
-                    <div class="swiper-slide panel__swiper-slide">
-                        <img class="panel__swiper-image" src="{{asset('img/admin_screens/admin-login.webp')}}"
-                            alt="Widok logowania do panelu administracyjnego Site Wizard" />
                     </div>
                 </div>
             </div>
@@ -169,7 +166,6 @@
         <div class="panel__buttons">
             <a target="_blank" href="https://github.com/Jakub017/site-wizard"
                 class="panel__button panel__button--empty">{{ __('github.repo') }}</a>
-            <!-- <a href="#" class="panel__button">Zobacz demo</a> -->
         </div>
     </div>
 </section>
@@ -247,23 +243,23 @@
         </div>
 
         <div class="works__card works__card--visible" data-filter="full-stack">
-            <div class="works__image-wrapper"><img class="works__image" src="{{asset('img/works/euregio-info.webp')}}"
-                    alt="Praca Full-Stack EuRegio-Info">
+            <div class="works__image-wrapper"><img class="works__image" src="{{asset('img/works/olza.webp')}}"
+                    alt="Praca Full-Stack Olza.pl">
             </div>
             <div class="works__content">
-                <h3 class="works__name">{{__('euregio.title')}}</h3>
+                <h3 class="works__name">{{__('olza.title')}}</h3>
                 <ul class="works__tech">
                     <li class="works__item">HTML</li>
-                    <li class="works__item">SASS (BEM)</li>
+                    <li class="works__item">SCSS (BEM)</li>
                     <li class="works__item">Javascript</li>
                     <li class="works__item">Laravel</li>
-                    <li class="works__item">Site Wizard</li>
+                    <li class="works__item">Livewire</li>
                     <li class="works__item">Breeze</li>
                     <li class="works__item">Git</li>
                 </ul>
-                <p class="works__description">{!! __('euregio.description') !!}</p>
+                <p class="works__description">{!! __('olza.description') !!}</p>
                 <div class="works__buttons">
-                    <a target="_blank" href="http://euroregioinfo.strondlafirm.hekko24.pl/"
+                    <a target="_blank" href="https://olza.pl/pl/"
                         class="works__link works__link--visit">{{__('see.online')}} <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -277,12 +273,11 @@
                 <h3 class="works__name">{{ __('movie.title') }}</h3>
                 <ul class="works__tech">
                     <li class="works__item">HTML</li>
-                    <li class="works__item">SCSS, BEM</li>
+                    <li class="works__item">SCSS (BEM)</li>
                     <li class="works__item">Javascript</li>
                     <li class="works__item">Laravel</li>
                     <li class="works__item">API</li>
                     <li class="works__item">Livewire</li>
-                    <li class="works__item">Alpine.js</li>
                     <li class="works__item">Git</li>
                     <li class="works__item">TMBD</li>
                 </ul>
@@ -298,26 +293,26 @@
         </div>
 
         <div class="works__card works__card--visible" data-filter="full-stack">
-            <div class="works__image-wrapper"><img class="works__image"
-                    src="{{asset('img/works/prywatny-organizer.webp')}}" alt="Praca Full-Stack Prywatny organizer">
+            <div class="works__image-wrapper"><img class="works__image" src="{{asset('img/works/dog-cafe.webp')}}"
+                    alt="Praca Full-Stack Dog Cafe">
             </div>
             <div class="works__content">
-                <h3 class="works__name">{{__('crm.title')}}</h3>
+                <h3 class="works__name">{{__('dog.title')}}</h3>
                 <ul class="works__tech">
                     <li class="works__item">HTML</li>
-                    <li class="works__item">SASS (BEM)</li>
+                    <li class="works__item">SCSS (BEM)</li>
                     <li class="works__item">Javascript</li>
                     <li class="works__item">Laravel</li>
-                    <li class="works__item">Breeze</li>
+                    <li class="works__item">Voyager</li>
                     <li class="works__item">Git</li>
                 </ul>
-                <p class="works__description">{!! __('crm.description') !!}</p>
+                <p class="works__description">{!! __('dog.description') !!}</p>
                 <div class="works__buttons">
-                    <a target="_blank" href="https://github.com/Jakub017/crm-app"
+                    <a target="_blank" href="https://github.com/Jakub017/dog-cafe"
                         class="works__link">{{__('github.repo')}}</a>
-                    <!-- <a target="_blank" href="https://dog-cafe.uusgvsrbeu.cfolks.pl/"
+                    <a target="_blank" href="https://dog-cafe.lipinskijakub.pl/"
                         class="works__link works__link--visit">{{__('see.online')}} <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>

@@ -49,11 +49,11 @@
     "movie.title": "Movie App",
     "movie.description": "An application that uses The Movie Database API. It allows users to register and log in, browse categories, movies, series and actors. <span class=\"section__colored\">Logged in users can add movies to favorites and to their own lists. A Livewire-based search engine is also implemented</span> for better interactivity.",
 
-    "euregio.title": "Euregio-Info",
-    "euregio.description": "A website dedicated to research related to the closure of the Polish-Czech border. I prepared the front-end layer in this project using HTML, SCSS and Javascript. <span class=\"section__colored\">I also used my Site Wizard panel in the project to manage logged-in users, add studies, content to the site and to manage the Newsletter. The administrator can mark in the panel which studies are available for logged-in users and which are available for everyone</span>. The site is available in two languages - Polish and Czech.",
+    "olza.title": "Olza.pl",
+    "olza.description": "An advanced website created for the Association for Development and Regional Cooperation „Olza” based in Cieszyn, divided into sections: sports, culture, tourism, and a photo bank. The website contains over 40000 news articles, several hundred galleries, and many documents and information from the entire Cieszyn region. <span class=\"section__colored\">The site also has an advanced search engine for events and festivities, as well as a login system and allows downloading images from the galleries only to logged-in users</span>.",
 
-    "crm.title": "Personal organizer",
-    "crm.description": "An application where users can schedule their events, save login credentials for websites, FTP or SSH clients. The application is also equipped with the function to add notes, edit the profile and change the color theme. <span class=\"section__colored\">In addition to the basic CRUD functions, I have also added the function to filter data by type or date of addition, and a search engine</span>.",
+    "dog.title": "Dog Cafe",
+    "dog.description": "A simple landing page for a dog cafe, I prepared the front - end layer here, drawing inspiration from a cat cafe website in the UK. <span class=\"section__colored\"> The site has been equipped with a Voyager administrative panel, in which I configured the ability to add animals and cafe offers. </span> The site also has a simple contact form.",
 
     "design.title": "Design Alive",
     "design.description": "DesignAlive is a portal with articles from the world of wide-ranging design <span class=\"section__colored\">with about 30 thousand active users every month</span>. In this project, I was in charge of keeping the site up-to-date and secure, maintenance and <span class=\"section__colored\">introducing new solutions to the website</span>.",

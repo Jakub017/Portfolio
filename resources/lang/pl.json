@@ -48,11 +48,11 @@
     "movie.title": "Movie App",
     "movie.description": "Aplikacja korzystająca z API The Movie Database. Umożliwia rejestrację oraz logowanie użytkowników, przeglądanie kategorii, filmów, seriali i aktorów. <span class=\"section__colored\">Zalogowani użytkownicy mogą dodawać filmy do ulubionych oraz do własnych list. Zaimplementowana została również wyszukiwarka oparta o Livewire</span> w celu zapewnienia lepszej interaktywności.",
 
-    "euregio.title": "Euregio-Info",
-    "euregio.description": "Strona internetowa poświęcona badaniom związanym z zamknięciem granicy polsko-czeskiej. Przygotowałem w tym projekcie warstwę front-end przy użyciu HTML, SCSS oraz Javascript. <span class=\"section__colored\">W projekcie wykorzystałem również mój autorski panel Site Wizard do zarządzania zalogowanymi użytkownikami, dodawaniem badań, treści na stronę oraz do zarządzaniem Newsletterem. Administrator może w panelu zaznaczyć, które badania są dostępne dla zalogowanych użytkowników, a które dla wszystkich</span>. Strona dostępna jest w dwóch językach - polskim i czeskim.",
+    "olza.title": "Olza.pl",
+    "olza.description": "Zaawansowana witryna internetowa stworzona dla Stowarzyszenie Rozwoju i Współpracy Regionalnej „Olza” z siedzibą w Cieszynie z podziałem na serwisy: sportowy, kulturalny, turystyczny oraz bank fotografii. Serwis zawiera ponad 40000 tysięcy aktualnosci, kilkaset galerii oraz wiele dokumentów i informacji z całego regionu cieszyńskiego. <span class=\"section__colored\">Witryna posiada również zaawansowaną wyszukiwarkę wydarzeń i imprez, a także system logowania i umożliwia pobieranie zdjęć z galerii tylko zalogowanym użytkownikom</span>.",
 
-    "crm.title": "Prywatny organizer",
-    "crm.description": "Aplikacja, w której użytkownik może planować swoje wydarzenia, zapisywać dane logowania do stron internetowych, klientów FTP czy SSH. Aplikacja została również wyposażona w funkcję dodawania notatek, edycji profilu oraz zmiany motywu kolorystycznego. <span class=\"section__colored\">Oprócz podstawowych funkcji CRUD, dodałem również możliwość filtrowania danych według ich typu, czy daty dodania, oraz funkcję wyszukiwarki</span>.",
+    "dog.title": "Dog Cafe",
+    "dog.description": "Prosty landing page psiej kawiarni, przygotowałem tutaj warstwę front-end wzroując się na stronie kociej kawiarni z UK. <span class=\"section__colored\">Strona została wyposażona w panel adminsitracyjny Voyager, w którym skonfigurowałem możliwość dodawania zwierząt oraz oferty kawiarni.</span> Strona posiada również prosty formularz kontaktowy",
 
     "design.title": "Design Alive",
     "design.description": "DesignAlive to portal z artykułami ze świata szeroko pojętego designu <span class=\"section__colored\">z około 30 tysiącami aktywnych użytkowników każdego miesiąca</span>. W tym projekcie zajmowałem się utrzymywaniem aktualności i bezpieczeństwa strony, konserwacją oraz <span class=\"colored\">wprowadzaniem nowych rozwiązań do portalu</span>.",
