@@ -669,6 +669,30 @@ option:before {
     &__item {
         font-size: $text-mobile-fz;
     }
+
+    &__info {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    &__swipe-icon {
+        color: #fff;
+        font-size: 3rem;
+        animation: swipe 2s ease-in-out infinite both;
+    }
+
+    &__swipe-text {
+        color: #fff;
+        font-size: $text-mobile-fz;
+        letter-spacing: 0.09rem;
+
+    }
 }
 
 .works {
@@ -1043,9 +1067,7 @@ option:before {
 .projects {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 2rem;
-    padding-top: calc(105px + 4rem);
-    padding-bottom: calc(105px + 4rem);
+    padding: calc(105px + 4rem) 2rem 4rem 2rem;
 
     &__heading {
         font-size: $heading-mobile-fz;
@@ -1294,7 +1316,6 @@ option:before {
     }
 
     .skills {
-        // max-width: 1200px;
 
         &__title,
         &__subtitle {
@@ -1331,6 +1352,11 @@ option:before {
 
         &__name {
             font-size: calc($heading-desktop-fz - .4rem);
+        }
+
+        &__swipe-text {
+            font-size: $text-desktop-fz;
+            letter-spacing: 0.09rem;
         }
     }
 

@@ -20,6 +20,7 @@
     "skills.subheading": "Technologie i narzedzia, z którymi pracuję",
     "skills.description": "W trakcie swojej pracy z web developmentem nauczyłem się kilku języków i technologii oraz przetestowałem kilka narzędzi. Te najważniejsze wymieniłem na kartach obok.",
     "skills.other": "Inne",
+    "skills.swipe": "Przesuń palcem!",
 
     "panel.heading": "Site Wizard",
     "panel.subheading": "Moje autorskie rozwiązanie dla stron internetowych",
@@ -76,5 +77,20 @@
     "form.message": "Treść wiadomości (wymagane)",
     "form.send": "Wyślij wiadomość",
 
-    "footer.text": "Projekt i realizacja - Jakub Lipiński"
+    "footer.text": "Projekt i realizacja - Jakub Lipiński",
+
+
+    "projects.name1": "StronyDlaFirm.eu",
+    "projects.name2": "SOiZ",
+    "projects.name3": "Budsystem",
+    "projects.name4": "Biblioteka w Dębowcu",
+    "projects.name5": "Multienerga.de",
+    "projects.name6": "Plastic Trader",
+
+    "projects.description1": "Witryna firmy, w której pracuję. Została oparta o Wordpress oraz <span class=\"section__colored\">szablon, który zmodyfikowałem tak aby był jak najbardziej zgodny z wizerunkiem firmy</span>. Zajmowałem się również przeniesieniem treści ze starej strony oraz konfiguracją narzędzi do pomiaru ruchu na stronie.",
+    "projects.description2": "Strona internetowa SOiZ w Cieszynie. Warstwa front-end pochodzi z szablonu wykupionego na Envato, ja <span class=\"section__colored\">zajmowałem się jego dostosowaniem oraz podpięciem panelu administracyjnego Voyager</span>. Strona posiada również zaawansowany formularz rekrutacyjny do szkoły.",
+    "projects.description3": "Strona www firmy zajmującej się remontami oraz budową domów. <span class=\"section__colored\">W tym projekcie zajmowałem się podłączeniem panelu administracyjnego Voyager do strony</span>. Administrator może dodawać projekty oraz usługi a także odczytywać wiadomości bezpośrednio w panelu.",
+    "projects.description4": "Strona internetowa biblioteki Publicznej w Dębowcu oparta o Wordpress oraz szablon korzystający z edytora Gutenberg. Szablon dostosowałem w taki sposób, aby był w 100% zgodny z wymaganiami WCAG 2.1 dzięki czemu <span class=\"section__colored\">witryna uzyskała certyfikat dostępności cyfrowej</span>.",
+    "projects.description5": "Strona internetowa firmy zajmującej się m.in fotowoltaiką. <span class=\"section__colored\">Witryna została stworzona na Wordpressie i szablonie korzystającego z Elementora</span>. Szablon oraz panel administracyjny dostosowałem w taki sposób, aby klient mógł samodzielnie wprowadzać nowe treści na stronę.",
+    "projects.description6": "Prosta witryna firmy zajmującej się skupem oraz sprzedażą tworzyw sztucznych. <span class=\"section__colored\">Szablon Wordpress korzystający z Elementora dostosowałem pod potrzeby klienta</span>. Zainstalowałem również wszystkie najważniejsze narzędzia do pomiaru ruchu na stronie."
 }

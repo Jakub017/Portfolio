@@ -578,6 +578,27 @@ option:before {
 .skills__item {
   font-size: 1.6rem;
 }
+.skills__info {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.skills__swipe-icon {
+  color: #fff;
+  font-size: 3rem;
+  animation: swipe 2s ease-in-out infinite both;
+}
+.skills__swipe-text {
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.09rem;
+}
 
 .works__title, .works__subtitle {
   text-align: center;
@@ -893,9 +914,7 @@ option:before {
 .projects {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem;
-  padding-top: calc(105px + 4rem);
-  padding-bottom: calc(105px + 4rem);
+  padding: calc(105px + 4rem) 2rem 4rem 2rem;
 }
 .projects__heading {
   font-size: 3rem;
@@ -1127,6 +1146,10 @@ option:before {
   }
   .skills__name {
     font-size: 3.4rem;
+  }
+  .skills__swipe-text {
+    font-size: 1.8rem;
+    letter-spacing: 0.09rem;
   }
   .works__name {
     font-size: 2.5rem;

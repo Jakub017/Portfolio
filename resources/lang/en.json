@@ -21,6 +21,7 @@
     "skills.subheading": "Technologies and tools I work with",
     "skills.description": "In the course of my work with web development, I learned several languages and technologies and tested several tools. I have listed the most important ones on those cards.",
     "skills.other": "Other",
+    "skills.swipe": "Swipe me!",
 
     "panel.heading": "Site Wizard",
     "panel.subheading": "My own admin panel",
@@ -78,5 +79,19 @@
     "form.message": "Message (required)",
     "form.send": "Send message",
 
-    "footer.text": "Design and implementation - Jakub Lipiński"
+    "footer.text": "Design and implementation - Jakub Lipiński",
+
+    "projects.name1": "StronyDlaFirm.eu",
+    "projects.name2": "SOiZ",
+    "projects.name3": "Budsystem",
+    "projects.name4": "Library in Dębowiec",
+    "projects.name5": "Multienerga.de",
+    "projects.name6": "Plastic Trader",
+
+    "projects.description1": "The website of the company I work for. It is based on WordPress and a <span class=\"section__colored\">template, which I modified to be as consistent as possible with the company's image</span>. I was also responsible for transferring content from the old site and configuring tools for measuring website traffic.",
+    "projects.description2": "Website of the SOiZ in Cieszyn. The front-end layer comes from a template purchased on Envato, and I <span class=\"section__colored\">was responsible for its customization and connecting the Voyager administrative panel</span>. The site also has an advanced recruitment form for the school.",
+    "projects.description3": "Website of a company dealing with renovations and house construction. <span class=\"section__colored\">In this project, I was responsible for connecting the Voyager administrative panel to the website</span>. The administrator can add projects and services as well as read messages directly in the panel.",
+    "projects.description4": "Website of the Public Library in Dębowiec based on WordPress and a template using the Gutenberg editor. I adapted the template in such a way that it is 100% compliant with WCAG 2.1 standards, resulting in the <span class=\"section__colored\">website obtaining a digital accessibility certificate</span>.",
+    "projects.description5": "Website of a company dealing with photovoltaics, among other things. <span class=\"section__colored\">The site was created on WordPress and a template using Elementor</span>. I adapted the template and administrative panel in such a way that the client could independently introduce new content to the site.",
+    "projects.description6": "Simple website of a company dealing with the purchase and sale of plastics. <span class=\"section__colored\">I customized the WordPress template using Elementor to suit the client's needs</span>. I also installed all the most important tools for measuring website traffic."
 }

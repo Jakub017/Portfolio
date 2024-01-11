@@ -119,8 +119,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="skills__info">
+                    <i class="skills__swipe-icon fa-solid fa-hand-pointer"></i>
+                    <span class="skills__swipe-text">{{ __('skills.swipe') }}</span>
+                </div>
+
             </div>
+
         </div>
+
     </div>
 </section>
 
