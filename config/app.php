@@ -97,6 +97,8 @@ return [
 
     'fallback_locale' => 'en',
 
+    'supported_locales' => ['en', 'pl'],
+
     /*
     |--------------------------------------------------------------------------
     | Application Available Locales

@@ -268,9 +268,84 @@ option:before {
 
     &__buttons {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 1rem;
+    }
+
+    &__language-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &__language-current {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+    }
+
+    &__language-wrapper:hover &__arrow {
+        color: $main-color;
+    }
+
+    &__language {
+        font-size: $text-desktop-fz;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &__arrow {
+        color: #fff;
+        font-size: 2rem;
+        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
+
+        &--active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__flag {
+        width: 25px;
+    }
+
+    &__language-dropdown {
+        position: absolute;
+        top: 66px;
+        left: 0;
+        background-color: $blue;
+        width: 120%;
+        padding: 2rem;
+        box-shadow: 0 0 20px 2px rgba(2, 12, 27, 0.7);
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s ease-in-out;
+
+        &--visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__language-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: $text-desktop-fz;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: $main-color;
+        }
     }
 }
 

@@ -17,22 +17,18 @@ use App\Http\Controllers\ContactController;
 | 
 */
 
+Route::redirect('/', '/pl');
 
-
+Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], function () {
     Route::controller(PagesController::class)->group(function (){
         Route::get('/', 'getHomePage')->name('home');
         Route::get('/projekty', 'projects')->name('projects');
     });
+});
 
-    Route::post('/set-locale', function (Request $request) {
-        $request->session()->put('locale', $request->input('locale'));
-
-        return redirect()->back();
-    })->name('set.locale');
-
-    Route::controller(ContactController::class)->group(function (){
-        Route::post('/', 'send')->name('contact.send');
-    });
+Route::controller(ContactController::class)->group(function (){
+    Route::post('/', 'send')->name('contact.send');
+});
 
 
 

@@ -233,9 +233,73 @@ option:before {
 }
 .nav__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 1rem;
+}
+.nav__language-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.nav__language-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.nav__language-wrapper:hover .nav__arrow {
+  color: #00A789;
+}
+.nav__language {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+.nav__arrow {
+  color: #fff;
+  font-size: 2rem;
+  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.nav__arrow--active {
+  transform: rotate(180deg);
+}
+.nav__flag {
+  width: 25px;
+}
+.nav__language-dropdown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  background-color: #0A192F;
+  width: 120%;
+  padding: 2rem;
+  box-shadow: 0 0 20px 2px rgba(2, 12, 27, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+}
+.nav__language-dropdown--visible {
+  opacity: 1;
+  visibility: visible;
+}
+.nav__language-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: 0.2s ease-in-out;
+}
+.nav__language-link:hover {
+  color: #00A789;
 }
 
 .section {

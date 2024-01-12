@@ -213,18 +213,13 @@ menuBtn.addEventListener("click", function () {
 
 
 
-// Menu hover effect
+// Language dropdown starts
 
-const menuOptions = [...document.querySelectorAll('.nav__option')];
+const languageBtn = document.querySelector('.nav__language-current');
+const languageDropdown = document.querySelector('.nav__language-dropdown');
+const languageArrow = document.querySelector('.nav__arrow');
 
-menuOptions.forEach((menuOption) => {
-    menuOption.addEventListener("mouseover", function () {
-        menuOption.classList.add('nav__option--hover');
-    })
-});
-
-menuOptions.forEach((menuOption) => {
-    menuOption.addEventListener("mouseout", function () {
-        menuOption.classList.remove('nav__option--hover');
-    })
+languageBtn.addEventListener("click", function () {
+    languageDropdown.classList.toggle('nav__language-dropdown--visible');
+    languageArrow.classList.toggle('nav__arrow--active');
 });

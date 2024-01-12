@@ -382,7 +382,7 @@
             </div>
         </div>
 
-        <a href="{{route('projects')}}" class="works__all">{{ __('works.all') }}</a>
+        <a href="{{route('projects', ['locale' => app()->getLocale()])}}" class="works__all">{{ __('works.all') }}</a>
     </div>
 </section>
 

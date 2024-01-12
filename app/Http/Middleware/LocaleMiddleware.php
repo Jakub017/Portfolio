@@ -14,12 +14,14 @@ class LocaleMiddleware
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next)
-    {
-        if ($request->session()->has('locale')) {
-            app()->setLocale($request->session()->get('locale'));
+public function handle($request, Closure $next)
+{
+    if ($locale = $request->segment(1)) {
+        if (in_array($locale, config('app.supported_locales'))) {
+            app()->setLocale($locale);
         }
-
-        return $next($request);
     }
+
+    return $next($request);
+}
 }
