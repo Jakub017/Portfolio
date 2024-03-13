@@ -26,7 +26,10 @@ class ContactController extends Controller
 
         Mail::to('kontakt@lipinskijakub.pl')->send(new ContactMail($attributes));
 
-        return redirect()->back()->with(['success' => 'Dziękuję za wiadomość! Zwykle odpowiadam w ciągu jednego dnia roboczego.']);
+        if(app()->getLocale() == 'pl') {
+            return redirect()->back()->with(['success' => 'Dziękuję za wiadomość! Zwykle odpowiadam w ciągu jednego dnia roboczego.']);
+        }elseif(app()->getLocale() == 'en') {
+            return redirect()->back()->with(['success' => 'Thank you for your message! I usually reply within one business day.']);
+        }
     }
-
 }

@@ -280,8 +280,8 @@ option:before {
   width: 120%;
   padding: 2rem;
   box-shadow: 0 0 20px 2px rgba(2, 12, 27, 0.7);
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   transition: 0.2s ease-in-out;
 }
 .nav__language-dropdown--visible {
@@ -296,7 +296,6 @@ option:before {
   color: #fff;
   text-decoration: none;
   font-size: 1.8rem;
-  transition: 0.2s ease-in-out;
 }
 .nav__language-link:hover {
   color: #00A789;
