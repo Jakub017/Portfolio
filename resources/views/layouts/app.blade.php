@@ -47,11 +47,11 @@
 </head>
 
 <body>
-    @include('elements.nav')
+    @include('partials.nav')
 
     @yield('content')
 
-    @include('elements.footer')
+    @include('partials.footer')
 </body>
 
 <!-- Swiper JS -->

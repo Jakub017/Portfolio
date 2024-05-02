@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
 @section('content')
 
@@ -301,7 +301,7 @@
 
         <div class="works__card works__card--visible" data-filter="full-stack">
             <div class="works__image-wrapper"><img class="works__image" src="{{asset('img/works/dog-cafe.webp')}}"
-                    alt="Praca Full-Stack Dog Cafe">
+                    alt="Praca Full-Stack Fprotect.pl">
             </div>
             <div class="works__content">
                 <h3 class="works__name">{{__('dog.title')}}</h3>
